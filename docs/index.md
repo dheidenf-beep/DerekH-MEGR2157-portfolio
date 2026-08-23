@@ -10,6 +10,6 @@ The Standard I will be holding myself for this portfolio will be to create a pro
 
 ---------------------------------------
 
-## This portfolio is organized into the different assignments and projects that will be done throughout the semester.
+## This portfolio is organized into the different assignments and projects that will be completed throughout the semester.
 
 [Project A1: Build Your Professional Portfolio](assignments/A01/index.md)
