@@ -57,6 +57,13 @@ A decision made by Westcott Rule Co. was to coat the scissors with a titanium ba
 
 ## Decide
 
+**Homepage Organization:**
+
+The homepage is meant to be organized in a way that is concise and allows the reader to be able to access other pages quickly and easily. The top contains a brief overview of the portfolio and a small introduction of who I am. A link to the "about me page" is also near the top with my documentation standard. The section below will be dedicated to links to my projects that I will update throughout the semester as the class progresses.
+
+**Intentional Customization**:
+
+
 
 ## Communicate
 
