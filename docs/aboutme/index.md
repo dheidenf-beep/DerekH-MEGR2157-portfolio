@@ -7,3 +7,8 @@ Having loved my time in the FIRST Robotics program, I have decided to pursue mec
 ---------------------------------------------------------
 **What does it mean to defend an engineering decision?**
 
+To defend an engineering decision is to justify and explain a decision made in engineering context and why that decision is preferable or superior to the alternatives. In order to defend an engineering decision, you must be able to prove with calculations or evidence that it is not only a decent or viable solution but in some way accomplishes the task in some way that is better, i.e. it's cheaper, more stable, or more suited, than other possible decisions.
+I have never had to defend an engineering decision in a professional context. However, having been part of a robotics team, I have experience needing to justify why my choice or idea is in some way better than other presented ideas. In that way, I believe I know the basics of defending an engineering decision, but I have never had to provide overwhelming evidence as to way my choice was superior. 
+
+----------------------------------------------------------
+**Time Spent on this Assignment:** _2 Hours_
