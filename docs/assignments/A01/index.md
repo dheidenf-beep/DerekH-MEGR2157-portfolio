@@ -41,7 +41,9 @@ The blades are attached at a single common point, usually a screw or rivet, abou
 
 
 [The link to the Patent by Westcott](https://patents.google.com/patent/WO2008077135A1/en?q=(Coating+for+cutting+implements)&assignee=Acme+United+Corporation)
+
 Patent Number: WO2008077135A1
+
 Inventor/Author: Larry Buchtmann
 
 Knives and shears are common alternatives to scissors. Both have advantages and disadvantages when compared to scissors. Knives are able to cut a wider variety of materials and are not limited to a specific method of cutting. However, knives can be less precise and sometimes require a surface to cut on. Shears are similar to scissors, utilizing blades that pivot around a common point. Although, shears are generally much larger and more purpose built for applications that require more cutting force, such as garden work.
