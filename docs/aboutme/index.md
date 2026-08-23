@@ -1,6 +1,6 @@
 About me:
 
-![Headshot](heidenfelder_derek_2822c.jpg)
+<img src="heidenfelder_derek_2822c.jpg" width="200" align="middle">
 
 My name is Derek Heidenfelder and I am a mechanical engineering student at the University of North Carolina at Charlotte. Growing up, I loved playing with Legos, wooden blocks, and other creative toys. I enjoyed the process of designing and building something. In middle school, I was a member of a local FIRST (For Inspiration and Recognition of Science and Technology) Lego League robotics team. FIRST Lego League or FLL is a program that is designed to create an interest in science and technology through a Lego based robotics competition. As a part of the team, I worked on designing and building a small Lego robot to complete "missions" to earn points. As a team, we would then attend competitions to earn as many points as possible against other teams. FLL taught me a lot about the basic engineering and design process along with how to work on a team. In high school, I continued being a part of the FIRST team and was old enough to participate in FTC or FIRST Tech Challenge. FTC is similar to FLL but instead of Legos, you use actual metal parts and create a much larger robot. FTC taught me much more about the engineering process, how to work well with a team under pressure during a competition, and how many different parts (coding, designing, etc.) go into accomplishing an engineering goal.
 
