@@ -9,10 +9,10 @@ The Objective of this portfolio is to create a document of the projects I make i
 Two engineering portfolios I found and used as inspiration are listed with brief assessments of each.
 
 [Mechanical Engineering Portfolio by Thanh Tran](https://thanhvtran.com/)
- - This portfolio created by Thanh Tran has a very concise design, Using flow diagrams and images to give a brief overview of what is on the portfolio. It is easy to navigate through by simply scrolling down to be able to see the projects and past work by the author. Each box also contains a link to see more details about that specific project or job. There are also quick access links in the top right corner of the webpage to directly see pages such as the projects or resume. Everything is laid out in a very visual fashion which makes the page look very neat. The only downside is needing to click a bunch of links to be able to find more information about something specific.
+ - This portfolio created by Thanh Tran has a very concise design, Using flow diagrams and images to give a brief overview of what is on the portfolio. It is easy to navigate through by simply scrolling down to be able to see the projects and past work by the author. Each box also contains a link to see more details about that specific project or job. The projects pages have plenty of information about skills learned and what the goal of the project was. It more so expresses what the author did versus all of the details of the project, which could make it difficult to fully recreate. There are also quick access links in the top right corner of the webpage to directly see pages such as the projects or resume. Everything is laid out in a very visual fashion which makes the page look very neat. The only downside is needing to click a bunch of links to be able to find more information about something specific.
 
 [Mechanical Engineering Portfolio by Tyler Grindrod](https://github.com/Tyler-Grindrod/Mechanical-Design-Portfolio)
- - This GitHub portfolio created by Tyler Grindrod doesn't have any images or visual elements but has the projects and information laid out with embedded links to the specific pages and brief descriptions of the projects. The individual pages don't have much more written out information but there are documents that contain details of the project/job. Overall, the portfolio is less visually excited but still conveys the necessary information.
+ - This GitHub portfolio created by Tyler Grindrod doesn't have any images or visual elements but has the projects and information laid out with embedded links to the specific pages and brief descriptions of the projects. The individual pages don't have much more written out information but there are documents that contain all of the details of the project/job, making it very easy to recreate. Overall, the portfolio is less visually exciting but still conveys the necessary information.
 
 ## Analyze
 **Product Analysis:** Westcott Titanium Bonded Scissors
@@ -71,4 +71,4 @@ Added the William States Lee College of Engineering logo at the bottom of the ho
 
 [About Me Page](DerekH-MEGR2157-portfolio/docs/aboutme/index.md)
 
-**Time Spent on This Assignment:** 6 Hours
+**Time Spent on This Assignment:** 8 Hours
