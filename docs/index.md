@@ -1,7 +1,3 @@
-body {
-    background-color: black;
-}
-
 # Derek Heidenfelder - MEGR 2157 – Design Lecture Portfolio
 
 ![MEGR 2156-7 Title](MEGR2156title.png)
