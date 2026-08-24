@@ -16,4 +16,4 @@ The Standard I will be holding myself for this portfolio will be to create a pro
 
 
 
-![WSLCOE-Logo](WSLCOE-Logo.png)
+<img src="WSLCOE-Logo.png" width="200" align="left">
