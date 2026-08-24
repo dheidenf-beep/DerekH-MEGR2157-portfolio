@@ -67,4 +67,6 @@ Converted the "portfolio overview" page to be a list for the assignments over th
 
 ## Communicate
 
-[About Me Page](aboutme/index.md)
+[About Me Page](docs/aboutme/index.md)
+
+**Time Spent on This Assignment:** 6 Hours
