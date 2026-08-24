@@ -1,4 +1,4 @@
-# A1 – Build Your Professional Portfolio
+# A01 – Build Your Professional Portfolio
 
 ## Objective
 
@@ -67,6 +67,6 @@ Converted the "portfolio overview" page to be a list for the assignments over th
 
 ## Communicate
 
-[About Me Page](docs/aboutme/index.md)
+[About Me Page](aboutme/index.md)
 
 **Time Spent on This Assignment:** 6 Hours
