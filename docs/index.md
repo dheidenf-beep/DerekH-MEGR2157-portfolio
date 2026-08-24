@@ -12,4 +12,4 @@ The Standard I will be holding myself for this portfolio will be to create a pro
 
 ## This portfolio is organized into the different assignments and projects that will be completed throughout the semester.
 
-[Project List](assignments/portfolio-overview.md)
+[Project List](docs/portfolio-overview.md)
