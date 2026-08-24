@@ -65,6 +65,8 @@ The homepage is meant to be organized in a way that is concise and allows the re
 
 Converted the "portfolio overview" page to be a list for the assignments over the semester. I will update it every time I complete a project with a small description of that project. The overview of the portfolio should be on the homepage, making a dedicated "portfolio overview" page redundant. In this way, the reader should have an easier way to quickly see and access all of my projects.
 
+Added the William States Lee College of Engineering logo at the bottom of the homepage to emphasize this is a school portfolio, at least for the duration of the semester. This should make it clearer to the reader that my projects are based off of assignments I was given in the course. 
+
 ## Communicate
 
 [About Me Page](DerekH-MEGR2157-portfolio/docs/aboutme/index.md)
