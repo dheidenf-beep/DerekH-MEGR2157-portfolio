@@ -53,7 +53,7 @@ Knives and shears are common alternatives to scissors. Both have advantages and 
 [Patent for Wallace Manufacturing Corp Shears](https://patents.google.com/patent/US3372478A/en?q=(Scissors+And+Nippers)&dups=language&page=5)
 
 --------------------------------------
-A decision made by Westcott Rule Co. was to coat the scissors with a titanium based coating. The purpose of the titanium coating is to improve resistance to wear, rust, and damage. The coating allows the scissors to last longer, maintaining good performance and quality of cuts, and improves the visual appearance. The coating has been very successful and Westcott now uses it on all of the blades and cutting tool the company produces.
+A decision made by Westcott Rule Co. was to coat the scissors with a titanium based coating. The purpose of the titanium coating is to improve resistance to wear, rust, and damage. The coating allows the scissors to last longer, maintaining good performance and quality of cuts, and improves the visual appearance. The choice was likely implemented to improve the customer experience by creating an even higher quality product that managed to improve the design without completely changing it. The coating has been very successful and Westcott now uses it on all of the blades and cutting tool the company produces.
 
 ## Decide
 
@@ -67,6 +67,6 @@ Converted the "portfolio overview" page to be a list for the assignments over th
 
 ## Communicate
 
-[About Me](DerekH-MEGR2157-portfolio/docs/aboutme/index.md)
+[About Me Page](DerekH-MEGR2157-portfolio/docs/aboutme/index.md)
 
 **Time Spent on This Assignment:** 6 Hours
