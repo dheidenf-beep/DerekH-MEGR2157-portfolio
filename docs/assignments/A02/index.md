@@ -16,7 +16,11 @@ The truss I designed is composed of three equilateral triangles directly attache
 
 The forces of the truss was broken down and analyzed to determine the highest internal force which would be used to find the minimal cross-sectional area the beams and pins should have to ensure the truss can support the loads safely. The forces were first calculated symbolically then numerically. The external support forces were calculated first, which consisted of two forces at point A, Ay and Ax, and one force at point B, By, since it is a roller.
 
-![External Force Calculations](A02 Txt force calc.pdf)
+![External Force Calculations](A02-Ext-force-calc.pdf)
+
+<iframe src="A02-Ext-force-calc.pdf" width="100%" height="600px" type="application/pdf">
+  <p>Your browser does not support PDFs. <a href="A02-Ext-force-calc.pdf">Download the PDF</a>.</p>
+</iframe>
 
 Once the external forces Ay, By, and Ax were calculated, the internal forces were analyzed using method of joints. The internal forces were calculated using four of the five points since the fifth point would be redundant. Pin A, B, C, and D were analyzed to obtain all seven internal forces.
 
