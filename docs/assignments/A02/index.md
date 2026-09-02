@@ -1,29 +1,22 @@
 # A2 – Truss Stress Analysis
 
-For the second assignment, we were tasked with designing a truss to support two loads.
+For the second assignment, we were tasked with designing a simple truss to support two loads attached to two supports. 
 
 ## Objective
 
-The truss is meant to support two equal loads P pointing in different directions. The truss is mounted to a roller on the left at point B and a pin support on the right at point A. The distances between the points were given with a = 0.4 meters and b = 0.3 meters
+The truss is meant to support two equal loads P which are between 20 and 30 kilonewtons pointing in opposite directions. The truss is mounted to a roller on the left at point B and a pin support on the right at point A. The distances between the points were given with a = 0.4 meters being the horizontal distance between each point and b = 0.3 meters being the vertical distance from the lower points to the higher points. 
 
 ***Insert Pic of Problem***
 
-## Analyze
+## Truss Design
 
-
-## Decide
-
-The truss I drew is the simplest and most direct one that could be drawn. However, there are benefits in the simplicity of the design. 
+The truss I drew is the simplest and most direct one that could be drawn. However, there are benefits in the simplicity of the design, such as needing a fewer number of total parts and a lesser chance of connection points failing. 
 
 The truss I designed is composed of three equilateral triangles directly attached to the four points. This creates five points of intersections and seven beams composing the truss. To connect the seven beams, five pins are needed to hold the truss together. The design of the truss maximizes stability using the most amount of triangles possible while also minimizing the number of parts, thus minimizing weight and complexity. 
 
-*The simplicity of the design ensures a lower chance of failure from too many complex parts.
-
-- Analyze
-
 The forces of the truss was broken down and analyzed to determine the highest internal force which would be used to find the minimal cross-sectional area the beams and pins should have to ensure the truss can support the loads safely. The forces were first calculated symbolically then numerically. The external support forces were calculated first, which consisted of two forces at point A, Ay and Ax, and one force at point B, By, since it is a roller.
 
-***Insert pic of external force calculation***
+![External Force Calculations](A02 Txt force calc.pdf)
 
 Once the external forces Ay, By, and Ax were calculated, the internal forces were analyzed using method of joints. The internal forces were calculated using four of the five points since the fifth point would be redundant. Pin A, B, C, and D were analyzed to obtain all seven internal forces.
 
