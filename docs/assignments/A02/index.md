@@ -6,7 +6,7 @@ For the second assignment, we were tasked with designing a simple truss to suppo
 
 The truss is meant to support two equal loads P which are between 20 and 30 kilonewtons pointing in opposite directions. The truss is mounted to a roller on the left at point B and a pin support on the right at point A. The distances between the points were given with a = 0.4 meters being the horizontal distance between each point and b = 0.3 meters being the vertical distance from the lower points to the higher points. 
 
-***Insert Pic of Problem***
+<img src="Problem-Picture.png" alt="Image of the given Problem" width="500" height="600">
 
 ## Truss Design
 
