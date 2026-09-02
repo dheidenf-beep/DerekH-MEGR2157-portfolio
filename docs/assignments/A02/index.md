@@ -1,6 +1,6 @@
 # A2 – Truss Stress Analysis
 
-For the second assignment, we were tasked with designing a simple truss to support two loads attached to two supports. 
+For the second assignment of MEGR 2157, we were tasked with designing a simple truss to support two loads attached to two supports. 
 
 ## Objective
 
@@ -112,7 +112,122 @@ With the numbers calculated, the CAD modeling could begin.
 
 ## CAD Modeling the Truss
 
+<img src="TrussPic-1.png" alt="Truss Picture 1" width="500" height="600">
 
+I modeled the truss using Solidworks. The hardest part about modeling the truss was figuring out how to start. I drew a 2D sketch template with the right dimensions and tried a couple different ways to create the points where the pins would go and then create the beams to connect those points. The truss was not an assembly of multiple parts, I decided to model it as one thing and didn't put much time into where the beams intersected to save time and the assignment didn't require it. My first thought to try and create the truss structure was to create the points of intersection first and then try to build the beams off of those. 
 
-## Communicate
+<img src="TrussPic-2.png" alt="Truss Picture 2" width="500" height="600">
+
+<img src="TrussPic-3.png" alt="Truss Picture 3" width="500" height="600">
+
+However, I quickly figured out that I didn't know how to do that in Solidworks, and I tried a different plan. 
+
+<img src="TrussPic-4.png" alt="Truss Picture 4" width="500" height="600">
+
+<img src="TrussPic-5.png" alt="Truss Picture 5" width="500" height="600">
+
+I made the truss in 2D out of rectangles with the appropriate thickness of 20 mm and extruded it to a depth of 80 mm. The reason I went with the 80 mm is because at pin E, four beams intersect. And while I wasn't modeling the connections between the beams, I still didn't want them to overlap. Thus, the 80 mm was so I could offset each beam so that the beams wouldn't be directly on top of each other. It did mean the truss was less symmetric so I couldn't shortcut as many processes but it was slightly more realistic. 
+
+After the whole 2D base was extruded, I cut away the parts on the lower three beams where the round beams needed to go in between the points of overlap.
+
+<img src="TrussPic-6.png" alt="Truss Picture 6" width="500" height="600">
+
+I then extruded the round beams on the flat surfaces left over so that everything lined up nicely. 
+
+<img src="TrussPic-7.png" alt="Truss Picture 7" width="500" height="600">
+
+<img src="TrussPic-9.png" alt="Truss Picture 9" width="500" height="600">
+
+After extruding the three beams, I went ahead and put in three of the pin holes at a diameter of 6.72 mm. In hindsight, it would probably be safer in practice to do a slightly larger whole since that is the exact diameter of the pins, but for the CAD model, it sufficed.
+
+<img src="TrussPic-8.png" alt="Truss Picture 8" width="500" height="600">
+
+<img src="TrussPic-10.png" alt="Truss Picture 10" width="500" height="600">
+
+<img src="TrussPic-11.png" alt="Truss Picture 11" width="500" height="600">
+
+After putting in the initial three pin holes, I fixed the two corners of the truss to make room for the last two holes. 
+
+<img src="TrussPic-12.png" alt="Truss Picture 12" width="500" height="600">
+
+<img src="TrussPic-13.png" alt="Truss Picture 13" width="500" height="600">
+
+<img src="TrussPic-14.png" alt="Truss Picture 14" width="500" height="600">
+
+<img src="TrussPic-15.png" alt="Truss Picture 15" width="500" height="600">
+
+With all of the pin holes in, I worked on creating the last four beams, starting with removing the necessary material from the base structure. I also squared up the intersection points around points C and D. 
+
+<img src="TrussPic-16.png" alt="Truss Picture 16" width="500" height="600">
+
+<img src="TrussPic-17.png" alt="Truss Picture 17" width="500" height="600">
+
+<img src="TrussPic-18.png" alt="Truss Picture 18" width="500" height="600">
+
+Since I squared up the intersection points, I needed to extend the beam between the points. I tried to go back and edit the original extrusion to make it go through further. However, I couldn't figure out how to extend the extrude and ended up adding another sketch to extend the beam.
+
+<img src="TrussPic-19.png" alt="Truss Picture 19" width="500" height="600">
+
+Then I put in the two middle diagonal beams in the same way as before, making sure the offset was correct so the beams wouldn't overlap.
+
+<img src="TrussPic-20.png" alt="Truss Picture 20" width="500" height="600">
+
+<img src="TrussPic-21.png" alt="Truss Picture 21" width="500" height="600">
+
+<img src="TrussPic-22.png" alt="Truss Picture 22" width="500" height="600">
+
+<img src="TrussPic-23.png" alt="Truss Picture 23" width="500" height="600">
+
+The middle diagonal beams were offset to the edges so there would be room for the last two beams to be in the middle of the intersection. 
+
+<img src="TrussPic-24.png" alt="Truss Picture 24" width="500" height="600">
+
+<img src="TrussPic-25.png" alt="Truss Picture 25" width="500" height="600">
+
+With the last two beams put in, the model of the truss was completed. 
+
+<img src="TrussPic-26.png" alt="Truss Picture 26" width="500" height="600">
+
+<img src="TrussPic-27.png" alt="Truss Picture 27" width="500" height="600">
+
+While not the most detailed or realistic model of the truss that could be made, it is a good approximation and visual for what it would look like.
+
+With the truss finished, the pins were next to model. I modeled one 80 mm long, 6.72 mm diameter cylinder to represent all of the pins. 
+
+<img src="PinPic1.png" alt="Pin Picture 1" width="500" height="600">
+
+<img src="PinPic2.png" alt="Pin Picture 2" width="500" height="600">
+
+<img src="PinPic3.png" alt="Pin Picture 3" width="500" height="600">
+
+With the truss and pins modeled, materiels could be set for both and the properties, primarily mass, could be deduced.
+
+## CAD Truss Analysis
+
+Once the truss and pins were modeled, materiels were selected for both based off of yield strength and mass density. For the truss, Plan Carbon Steel was the closest material to Grade A A500 steel I could find, with a yield strength of 220 MPa which is slightly less than the actual 228 MPa but Plain Carbon Steel has the same density of 7800 kg/m^3. 
+
+<img src="TrussPic-28.png" alt="Truss Picture 28" width="500" height="600">
+
+<img src="TrussPic-Mat.png" alt="Truss Material Selection" width="500" height="600">
+
+<img src="TrussPic-Mass.png" alt="Truss Mass Calculation" width="500" height="600">
+
+The weight of the truss given by Solidworks was 9.80 kilograms which is higher than my calcualted 8.138 kilograms. The difference likely comes from the beam intersections which are solid in Solidworks while I only calculated the isolated beam weights. 
+
+For the pins, the closest material I could find was Alloy Steel which has a yield strength of 620 MPa which is about half of the true 1172.11 MPa yield strength. However, it has the closest density at 7700 kilograms/m^3 while the true density is 7695.0135 kg/m^3. 
+
+<img src="Pin-Steel.png" alt="Steel Pin" width="500" height="600">
+
+<img src="Pin-Steel-Mat.png" alt="Alloy Steel Material" width="500" height="600">
+
+<img src="Pin-Steel-Mass.png" alt="Mass Calculated by Solidworks" width="500" height="600">
+
+The mass of one pin calculated by Solidworks was 21.85 grams. The result was really close to my calculated 21.8 grams. The weight for all five pins then would be 109.25 grams or 0.10925 kg. Adding the masses together would give a total wieght of the truss of 9.90925 kg, which is much higher than the calculated 8.247 kg. 
+
+## Truss Component Failure Modes
+
+## _Conclusions (rename)_
+
+## Resources
+
 
