@@ -26,7 +26,7 @@ Once the external forces Ay, By, and Ax were calculated, the internal forces wer
 
 **Internal Force Calculations**
 
-<iframe src="A02-Int-forces-work.pdf" width="100%" height="px" type="application/pdf">
+<iframe src="A02-Int-forces-work.pdf" width="100%" height="600px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Int-forces-work.pdf">Download the PDF</a>.</p>
 </iframe>
 
