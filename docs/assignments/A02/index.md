@@ -18,7 +18,7 @@ The forces of the truss was broken down and analyzed to determine the highest in
 
 **External Force Calculations**
 
-<iframe src="A02-Ext-force-calc.pdf" width="100%" height="800px" type="application/pdf">
+<iframe src="A02-Ext-force-calc.pdf" width="100%" height="900px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Ext-force-calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -26,7 +26,7 @@ Once the external forces Ay, By, and Ax were calculated, the internal forces wer
 
 **Internal Force Calculations**
 
-<iframe src="A02-Int-forces-work.pdf" width="100%" height="4000px" type="application/pdf">
+<iframe src="A02-Int-forces-work.pdf" width="100%" height="4200px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Int-forces-work.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -36,7 +36,7 @@ The Assignment gave a range for the P values to be between 20 and 30 kilonewtons
 
 **Numerical Force Calculations**
 
-<iframe src="A02-Numerical-work.pdf" width="100%" height="600px" type="application/pdf">
+<iframe src="A02-Numerical-work.pdf" width="100%" height="900px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Numerical-work.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -52,7 +52,7 @@ The support forces were verified by plugging into back into the sum of forces eq
 
 **Numerical Force Verification**
 
-<iframe src="A02-Verifying-Numbers.pdf" width="100%" height="600px" type="application/pdf">
+<iframe src="A02-Verifying-Numbers.pdf" width="100%" height="1900px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Verifying-Numbers.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -62,7 +62,7 @@ This was the second attempt at calculating the internal forces. The first attemp
 
 **Incorrect Force Calculations**
 
-<iframe src="A02-Initial-Wrong-Work.pdf" width="100%" height="600px" type="application/pdf">
+<iframe src="A02-Initial-Wrong-Work.pdf" width="100%" height="900px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Initial-Wrong-Work.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -70,7 +70,7 @@ Using the new correct numbers, the internal cross sectional area need for the be
 
 **Safety and Stress Calculations**
 
-<iframe src="A02-Beam-Safety-Calc.pdf" width="100%" height="600px" type="application/pdf">
+<iframe src="A02-Beam-Safety-Calc.pdf" width="100%" height="900px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Beam-Safety-Calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -80,7 +80,7 @@ Using the same sources that listed the yield strength of grade A A500 steel, the
 
 **Weight Calculation**
 
-<iframe src="A02-Truss-weight-calc.pdf" width="100%" height="600px" type="application/pdf">
+<iframe src="A02-Truss-weight-calc.pdf" width="100%" height="900px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Truss-weight-calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -92,7 +92,7 @@ The minimal cross-sectional area of the pins was then calculated using the given
 
 **Shear Stress Pin Calculation**
 
-<iframe src="A02-Pin-force-calc.pdf" width="100%" height="600px" type="application/pdf">
+<iframe src="A02-Pin-force-calc.pdf" width="100%" height="1900px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Pin-force-calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -100,7 +100,7 @@ After a couple math mistakes (such as incorrectly calculating the area without t
 
 **Pin Weight Calculations**
 
-<iframe src="A02-Pin-weight-calc.pdf" width="100%" height="600px" type="application/pdf">
+<iframe src="A02-Pin-weight-calc.pdf" width="100%" height="900px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Pin-weight-calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
