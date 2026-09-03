@@ -14,6 +14,6 @@ The Standard I will be holding myself for this portfolio will be to create a pro
 
 [Project List](portfolio-overview.md)
 
-
+-----------------------------
 
 <img src="WSLCOE-Logo.png" width="200" align="left">
