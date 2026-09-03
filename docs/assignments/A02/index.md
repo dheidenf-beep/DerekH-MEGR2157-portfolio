@@ -62,7 +62,7 @@ This was the second attempt at calculating the internal forces. The first attemp
 
 **Incorrect Force Calculations**
 
-<iframe src="A02-Initial-Wrong-Work.pdf" width="100%" height="900px" type="application/pdf">
+<iframe src="A02-Initial-Wrong-Work.pdf" width="100%" height="4200px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Initial-Wrong-Work.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -80,7 +80,7 @@ Using the same sources that listed the yield strength of grade A A500 steel, the
 
 **Weight Calculation**
 
-<iframe src="A02-Truss-weight-calc.pdf" width="100%" height="900px" type="application/pdf">
+<iframe src="A02-Truss-weight-calc.pdf" width="100%" height="2800px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Truss-weight-calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -92,7 +92,7 @@ The minimal cross-sectional area of the pins was then calculated using the given
 
 **Shear Stress Pin Calculation**
 
-<iframe src="A02-Pin-force-calc.pdf" width="100%" height="1900px" type="application/pdf">
+<iframe src="A02-Pin-force-calc.pdf" width="100%" height="1800px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Pin-force-calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
