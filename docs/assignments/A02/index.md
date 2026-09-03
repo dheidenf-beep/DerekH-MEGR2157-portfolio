@@ -18,7 +18,7 @@ The forces of the truss was broken down and analyzed to determine the highest in
 
 **External Force Calculations**
 
-<iframe src="A02-Ext-force-calc.pdf" width="100%" height="1200px" type="application/pdf">
+<iframe src="A02-Ext-force-calc.pdf" width="100%" height="1000px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Ext-force-calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -26,7 +26,7 @@ Once the external forces Ay, By, and Ax were calculated, the internal forces wer
 
 **Internal Force Calculations**
 
-<iframe src="A02-Int-forces-work.pdf" width="100%" height="2000px" type="application/pdf">
+<iframe src="A02-Int-forces-work.pdf" width="100%" height="4000px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Int-forces-work.pdf">Download the PDF</a>.</p>
 </iframe>
 
