@@ -1,10 +1,10 @@
 # A2 – Truss Stress Analysis
 
-For the second assignment of MEGR 2157, we were tasked with designing a simple truss to support two loads attached to two supports. 
+For the second assignment of MEGR 2157, we were tasked with designing a simple truss to support two loads while attaching to two supports. The assignment is meant to introduce us to designing and analyzing engineering systems from scratch. The truss structure wasn't required to be of any particular shape, allowing for creativity on how to complete the assignment.
 
 ## Objective
 
-The truss is meant to support two equal loads P which are between 20 and 30 kilonewtons pointing in opposite directions. The truss is mounted to a roller on the left at point B and a pin support on the right at point A. The distances between the points were given with a = 0.4 meters being the horizontal distance between each point and b = 0.3 meters being the vertical distance from the lower points to the higher points. 
+The truss is meant to support two equal loads P which are between 20 and 30 kilonewtons pointing in opposite directions. The truss is mounted to a roller on the left at point B and a pin support on the right at point A. The distances between the points were given with a = 0.4 meters being the horizontal distance between each point and b = 0.3 meters being the vertical distance from the lower points to the higher points. We were given complete freedom on how to design the truss that we best solved the problem.
 
 <img src="Problem-Picture.png" alt="Image of the given Problem" width="500" height="600">
 
@@ -26,7 +26,7 @@ Once the external forces Ay, By, and Ax were calculated, the internal forces wer
 
 **Internal Force Calculations**
 
-<iframe src="A02-Int-forces-work.pdf" width="100%" height="600px" type="application/pdf">
+<iframe src="A02-Int-forces-work.pdf" width="100%" height="px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Int-forces-work.pdf">Download the PDF</a>.</p>
 </iframe>
 
@@ -66,7 +66,7 @@ This was the second attempt at calculating the internal forces. The first attemp
   <p>Your browser does not support PDFs. <a href="A02-Initial-Wrong-Work.pdf">Download the PDF</a>.</p>
 </iframe>
 
-Using the new correct numbers, the internal cross sectional area need for the beams could be found using the largest force, being 20.031 kN, and a safety factor of 3.5. The yield strength used was 33,000 psi or 228 megapascals for Grade A A500 steel which was found using multiple sources that listed a range of 33,000 to ~50,000 psi. I went with the low end of 33,000 psi for additional safety. 
+Using the new correct numbers, the internal cross sectional area need for the beams could be found using the largest force, being 20.031 kN, and a safety factor of 3.5. The yield strength used was 33,000 psi or 228 megapascals for Grade A A500 steel which was found using multiple sources that listed a range of 33,000 to ~50,000 psi. I went with the low end of 33,000 psi for an additional level of safety. 
 
 **Safety and Stress Calculations**
 
@@ -96,7 +96,7 @@ The minimal cross-sectional area of the pins was then calculated using the given
   <p>Your browser does not support PDFs. <a href="A02-Pin-force-calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
-After a couple math mistakes, the minimum cross-sectional area was determined to be ~35.426 mm^2. Solving for the radius gave a radius of 3.36 mm and thus a pin diameter of 6.72 mm. The longest length chosen was 80 mm which was needed for the pin at point E to pass through the four 20 mm diameter beams. The weight of one pin was determined using the density of 7695.0135 kg/m^3. 
+After a couple math mistakes (such as incorrectly calculating the area without the safety factor), the minimum cross-sectional area was determined to be ~35.426 mm^2. Solving for the radius gave a radius of 3.36 mm and thus a pin diameter of 6.72 mm. The longest length chosen was 80 mm which was needed for the pin at point E to pass through the four 20 mm diameter beams. The weight of one pin was determined using the density of 7695.0135 kg/m^3. 
 
 **Pin Weight Calculations**
 
@@ -226,8 +226,67 @@ The mass of one pin calculated by Solidworks was 21.85 grams. The result was rea
 
 ## Truss Component Failure Modes
 
-## _Conclusions (rename)_
+Truss Failures depend heavily on the nature of the specific truss being analyzed. However, there are specific common failures such as buckling or yielding that are the most likely to occur in each member, both the beams and the pins, of the truss I designed. The truss being made of Grade A A500 structural steel means that it is ductile and able to withstand a large amount of stress before undergoing plastic deformation. 
+
+Analyzing the truss beams, each member is either under compression or tension due to the opposite loads of P. Looking at the internal forces on each member starting at A at the top right and moving counter-clockwise around the points, we can see which forces are compressive or tensile. Forces AD, DE, and BC are all tensile and AE, CE, and BC are all compressive. The member CD has an internal force of zero meaning there is no stress on it and it is purely there to hold the frame together. 
+
+For the tensile forces, AD, DE, and BC, the expected failure mode for the associated members would be yielding when the stresses exceed the yield stress of the steel. Under the ideal conditions, especially with the safety factor, yielding should not happen but if the loads were to change and increase, the structure of the truss might not be able to handle the loads. The easiest way to fix an issue like yielding would be to add more support either by increasing the cross-sectional area of the members or adding more beams to distribute the force. However, this obviously comes with tradeoffs like increasing cost, weight, and stress on the pins. 
+
+For the compressive forces, AE, CE, and BC, the expected failure mode for the associated members would be buckling when the compressive force reaches the point needed to bend the materiel suddenly causing it to deform or fracture. The left force of P is the cause of most of the compressive force due to it pointing up towards the stress versus down or away. Much like with yielding, the easiest solution to buckling would be to add more support. Either, larger cross-sectional area or thicker members to prevent the load from possibly being able to bend it. Although, at a certain point, the truss could buckle under its own weight if too much material is added and the pins don't break first. 
+
+The pins in trusses undergo massive amounts of shear stress while trying to hold the structure together. Shear stress can cause the pins to undergo shear failure which breaks apart the pins in the direction parallel to the force. Creep can also occur in the pins which causes them to sink into the member the pin is in which can weaken and deform the member. One solution would be to add redundant or multiple pins to each connection to distribute the stresses over. And if there are redundant pins, if a pin fails, the redundant pins could prevent the truss from collapsing entirely.
+
+## Conclusions
+
+During this assignment, I was forced to learn a lot about designing and creating a structure from scratch. I had to perform various mathematical checks and verifications to ensure my calculations were correct since there was no answer key. Modeling a truss structure in Solidworks was very different from anything I've done before which had me thinking very differently about how to go about it. THe truss modeling ended up needed a lot of trial and error before a successful method was devised. Researching failing modes was very enlightening to see what specific problems engineers need to design around in order to ensure the safety and stability of a structure. I ended up making a lot of simple math errors that ended up causing me to lose time and effort but it also reinforced checking my work to make sure the numbers were actually correct. Had I more time, I would've been able to more realistically model the truss with actual connections and assemblies. However, I chose to go simpler due to the time constraints.
+
+Time Spent on this assignment: 18 Hours
+
+[Truss STL File](Truss-Model-Finished.STL)
+
+[Pin STL File](Truss-Pin.STL)
 
 ## Resources
 
+[Solidworks](https://www.solidworks.com/)
+
+-------------------------------------------
+
+**Sources for A500 Steel Numbers**
+
+[Alro Steel](https://www.alro.com/divSteel/Metals_Gridpt.aspx?gp=0108&gpn=A500&Mat=CARBON%20STEEL&Type=Pipe%20/%20Tube)
+
+[Altitube Inc](https://www.altitube.com/en/astm-a500-grade-b-vs-c/)
+
+[Tus Pipe](https://www.tuspipe.com/standards/astm-a500/)
+
+[Totten Tubes Inc](https://www.tottentubes.com/astm-a500-specification-information)
+
+[Beam Dimensions](https://beamdimensions.com/materials/Steel/ASTM/ASTM_A500/#Grade_A)
+
+[Online Metals](https://www.onlinemetals.com/en/product-guide/alloy/a500-a513)
+
+----------------------------------------------
+
+**Source for Failure Mode Analysis**
+
+[Learning from failure propagation in steel truss bridges](https://www.sciencedirect.com/science/article/pii/S1350630723004429)
+
+[Truss Failure Analysis](https://broadtechengineering.com/truss-failure-analysis/)
+
+[Metal Plated Wood Truss Failure Causes](https://www.engr.psu.edu/ae/thesis/failures/MKP/failures/failures.wikispaces.com/Wood_Truss_Failures.html)
+
+[Predicting the Probability of Failure in Truss Structures Using Artificial Neural Networks](https://www.jsoftcivil.com/article_209137.html)
+
+[Experimental study and numerical analysis on the failure mode of staggered truss framing system](https://www.sciencedirect.com/science/article/pii/S0141029624004401#sec0110)
+
+[Experimental Study on System Reliability of Cold-Formed Steel Roof Trusses](https://scholarsmine.mst.edu/cgi/viewcontent.cgi?article=1156&context=ccfss-aisi-spec)
+
+[Brittle and Ductile](https://www.engineeringarchives.com/les_mom_brittleductile.html)
+
+[Buckling and Yielding](https://www.surescreenmaterials.com/failure-mechanisms/buckling-and-yielding)
+
+[Shear Failure](https://www.sciencedirect.com/topics/engineering/shear-failure)
+
+[What Is Creep In Materials? – And How Does It Work?](https://www.fidelisfea.com/post/what-is-creep-in-materials-and-how-does-it-work)
 
