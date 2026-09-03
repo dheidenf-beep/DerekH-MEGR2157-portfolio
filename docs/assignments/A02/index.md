@@ -18,7 +18,7 @@ The forces of the truss was broken down and analyzed to determine the highest in
 
 **External Force Calculations**
 
-<iframe src="A02-Ext-force-calc.pdf" width="100%" height="1000px" type="application/pdf">
+<iframe src="A02-Ext-force-calc.pdf" width="100%" height="800px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="A02-Ext-force-calc.pdf">Download the PDF</a>.</p>
 </iframe>
 
