@@ -1,10 +1,10 @@
 # A3 – Parametric & FEA
 
-# Objective
+## Objective
 
 Given maximum elongation of 0.009 inches. 300 lbs < Force < 500 lbs.
 
-# Analyze
+## Analyze
 
 After looking through the different Aluminum Alloys Solidworks had preinstalled, I went with 1100-H26 Rod (SS) which had an Elastic Modulus of 10.007604*10^6 psi. 
 
@@ -30,7 +30,7 @@ The length calculated by Solidworks was closer to 39.30 inches or about 0.73 inc
 
 
 
-# Bar Design
+## Bar Design
 
 Once I had the variables in place, I began modeling. The beam was very simple, just a cylinder with the dimensions bounded to the variables. 
 
@@ -56,9 +56,9 @@ Once the length and diameter parameters were in, those were all the measurements
 
 Calculating the potential difference gave a percentage difference between the two masses of 6.53%, which is reasonably small. One cause of error is the difference in lengths from my hand calculations with the Solidworks calculations with the Solidworks calculations likely being more precise.
 
-**__**
+**_INSERT PERCENT DIFF WORK_**
 
-## Initial Incorrect Bar Calculations
+### Initial Incorrect Bar Calculations
 
 Initially, when I started making the bar, I thought it was a hollow circular bar with an inner and outer diameter. This made the length calculations output a much larger number than I felt seemed reasonable. However, I went ahead and started modeling a hollow beam.
 
@@ -78,7 +78,46 @@ Initially, when I started making the bar, I thought it was a hollow circular bar
 
 The plan was to have an outer diameter of 2 inches and an inner diameter of 1.8 inches. This produced a length of approximately 120 inches which seemed like far too much. And, after double checking my calculations, I finally looked back through the instructions and saw that it didn't say anything about a hollow beam. I then redid my calculations and CAD modeling, this time with a solid beam. 
 
-**_INSERT PERCENT DIFF WORK_**
+## Finite Element Analysis
 
-# FEA Testing
+The next step in the process was to simulate the bar with the chosen load of 450 lbs on one side with the other being fixed. I used Solidworks' free Simulation Xpress Analysis Wizard tool to perform the Finite Element Analysis. I first had to set up the bar with correct conditions by fixing the beam in place on one end and applying the tensile force on the other end.
+
+![Fixing Surface](Fixing-Surface.png)
+
+* Fixing one end of the bar
+
+![Applying Force](Applying-Force.png)
+
+* Application of the 450 pound force to the other end of the bar
+
+![Force and Fixed Surface](Force-and-Fixed.png)
+
+* Both the force and fixed surface applied
+
+Once I had the force applied and one end fixed, I had verify the material. 
+
+![Verifying Material](Modulus-Material-Data.png)
+
+With the correct material, force, and fixed surface, I could then simulate the bar under load. 
+
+The Solidworks Simulation Xpress produced Von Mises stress, Displacement, Factor of Safety, and Deformation in the form of an animation.
+
+![Stress](Stress-Screenshot.png)
+
+* Von Mises stress graph with the maximum stress at 2.395 * 10^3 psi
+
+![Displacement](Displacement-Screenshot.png)
+
+* Displacement Graph with the maximum displacement reaching 9.001 * 10^-3 inches
+
+![Safety Factor](Safety-Factor-Screenshot.png)
+
+![Safety Factor 2](Safety-Factor-8.png)
+
+* The first picture shows where the safety factor is below 1 and the second is where it is below 8. The lowest factor of safety found was 7.18255
+
+With the data collected, I could draw some actual results from the FEA study.
+
+## FEA Results
+
 
