@@ -1,10 +1,10 @@
 # A3 – Parametric & FEA
 
-## Objective
+# Objective
 
 Given maximum elongation of 0.009 inches. 300 lbs < Force < 500 lbs.
 
-## Analyze
+# Analyze
 
 After looking through the different Aluminum Alloys Solidworks had preinstalled, I went with 1100-H26 Rod (SS) which had an Elastic Modulus of 10.007604*10^6 psi. 
 
@@ -30,7 +30,7 @@ The length calculated by Solidworks was closer to 39.30 inches or about 0.73 inc
 
 
 
-## Decide
+# Bar Design
 
 Once I had the variables in place, I began modeling. The beam was very simple, just a cylinder with the dimensions bounded to the variables. 
 
@@ -48,11 +48,37 @@ Once I had the variables in place, I began modeling. The beam was very simple, j
 
 * The bar was then extruded to the length of "L" or 39.30 inches.
 
-Once the length and diameter parameters were in, those were all the measurements I needed for the bar and I could move on to the Finite Element Analysis and parametric testing in Solidworks. 
+Once the length and diameter parameters were in, those were all the measurements I needed for the bar and I could move on to the Finite Element Analysis and parametric testing in Solidworks. However, before that, I calculated the weight of the bar. The Aluminum Alloy 1100-H26 Rod (SS) I used had a density of 0.10 lbs/in.^3. I calculated the volume to be 8.006 in.^3 by multiplying the Area of the base, 0.20 in.^3, by the calculated height of 40.03 inches. This produced a weight of 0.8006 pounds. This felt light for a beam that was 40 inches long, but Solidworks produced a similar result at 0.75 lbs.
 
-# Initial Incorrect Bar Calculations
+**_INSERT WEIGHT WORK_**
 
-Initially, when I started making the bar, 
+![Bar Mass](Bar-Mass-Properties.png)
 
-## Communicate
+Calculating the potential difference gave a percentage difference between the two masses of 6.53%, which is reasonably small. One cause of error is the difference in lengths from my hand calculations with the Solidworks calculations with the Solidworks calculations likely being more precise.
+
+**__**
+
+## Initial Incorrect Bar Calculations
+
+Initially, when I started making the bar, I thought it was a hollow circular bar with an inner and outer diameter. This made the length calculations output a much larger number than I felt seemed reasonable. However, I went ahead and started modeling a hollow beam.
+
+![Wrong Making 1](WRONG-Making-1.png)
+
+![Wrong Making 2](WRONG-Making-2.png)
+
+![Wrong Making 3](WRONG-Making-3.png)
+
+![Wrong Making 4](WRONG-Making-4.png)
+
+![Wrong Making 5](WRONG-Making-5.png)
+
+![Wrong Making 6](WRONG-Making-6.png)
+
+![WRONG-Variables](WRONG-Variables.png)
+
+The plan was to have an outer diameter of 2 inches and an inner diameter of 1.8 inches. This produced a length of approximately 120 inches which seemed like far too much. And, after double checking my calculations, I finally looked back through the instructions and saw that it didn't say anything about a hollow beam. I then redid my calculations and CAD modeling, this time with a solid beam. 
+
+**_INSERT PERCENT DIFF WORK_**
+
+# FEA Testing
 
