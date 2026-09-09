@@ -2,11 +2,11 @@
 
 ## Objective
 
-Given maximum elongation of 0.009 inches. 300 lbs < Force < 500 lbs.
+The objective of assignment 3 is to create a bar with a circular cross section with a given maximum elongation value of 0.009 inches and an axial force between 300 and 500 pounds. The goal is to model the bar parametrically using the built in function and equation features of CAD software to parametrically determine the length of the bar. Then, the bar will undergo Finite Element Analysis and a stress and displacement simulation within the CAD Software to determine its properties..
 
 ## Analyze
 
-After looking through the different Aluminum Alloys Solidworks had preinstalled, I went with 1100-H26 Rod (SS) which had an Elastic Modulus of 10.007604*10^6 psi. 
+To start, a material was first selected. The assignment calls for the bar to be made of Aluminum with an Elastic Modulus between 8.5 * 10^6 and 11.5 * 10^6 psi. After looking through the different Aluminum Alloys Solidworks had preinstalled, I went with 1100-H26 Rod (SS) which had an Elastic Modulus of 10.007604*10^6 psi. 
 
 ![Aluminum Alloy Stats](Alumininum-Stats.png)
 
@@ -120,7 +120,30 @@ With the data collected, I could draw some actual results from the FEA study.
 
 ### FEA Results
 
-Using the numbers given from the result of the study, it can be determined that the maximum stress of 2,395 psi is below the yield point of the Aluminum Alloy at 17,200 psi. This means the force of 450 pounds isn't even close to breaking the bar.
+Using the numbers given from the result of the study, it can be determined that the maximum stress of 2,395 psi is below the yield point of the Aluminum Alloy at 17,200 psi. This means the force of 450 pounds isn't even close to breaking the bar. Assuming a yield strength if 40 ksi or 40,000 psi puts the stress value even further below the yield point. 
 
-The results from the displacement show a maximum displacement of 0.009001 inches which is very close to the maximum allowed elongation of 0.009 inches. 
+The calculated lowest safety factor in the simulation was found to be 7.18255. This is a very high safety factor for the bar which is consistent with the low maximum stress compared to the yield strength of the Aluminum Alloy.
+
+The results from the displacement show a maximum displacement of 0.009001 inches which is very close to the maximum allowed elongation of 0.009 inches. The elongation I hand calculated was about 0.0089999 inches, right below the 0.009. The percent difference between the hand calculated and FEA calculated is 0.012% which is practically 0%. This is to be expected since the length of the bar in both the hand and Solidworks calculations were done using the maximum elongation of 0.009 inches. Thus, the calculations produced the length of bar which would stretch approximate 0.009 inches when subject to a tensile force of 450 pounds. There aren't any other parameters that were used to measure thus the calculated length is a minimum length that a bar of this composition would have to be to stretch a maximum of 0.009 inches when subjected to the axial 450 pound force.
+
+**_INSERT PERCENT DIFF WORK LENGTHS"_**
+
+### Stress Concentration Factor
+
+The assignment asks for the stress in a fairly substantial pin hole in the left side of the bar. Since the assignment gives no concrete numbers, I looked at a table of stress concentrations and chose one. I chose a stress concentration of 0.5 which meant the pin would have a diameter of 0.25 inches. Using the stress concentration and the maximum stress given from the stress analysis of the bar which was 2395 psi, I could calculate the new total stress that would be in the bar. I calculated the stress to be 4790 psi with the pin hole. This still had a reasonable safety factor at 3.591, albeit about half as much which was to be expected. The stress was also well below the yield point of 17,200 psi.
+
+**_INSERT STRESS CON WORK_**
+
+## Study Conclusions and Lessons Learned
+
+Overall, the beam was proven to be able to withstand the 450 pound force while only elongating to the maximum length of 0.009 inches. I would put more trust in the calculated Solidworks model over my hand calculated model because it is more precise, using more decimal places, has more data, and is less prone to mistakes (so long as the initial values and formulas are correct). 
+
+I learned a lot during this assignment. I had never run a proper CAD simulation before and it was very interesting learning to set it up. Same with Finite Element Analysis which I hadn't heard of before this assignment.  Stress concentrations also were not something I had been exposed to before and while I don't fully understand the concept, it seems interesting with how different indents or punctures in a part can have massive effects on the stress. And I now know how to at least somewhat calculate them.
+
+**Time Spent on this assignment: 5 Hours**
+
+### Modified Design Parameters
+
+The goal of this section was to change the parameters like the diameter and force and guessing how the length would change. I, unknowingly, did this at the beginning when I was first calculating the dimensions for the beam. I tested several different sizes of diameter and quickly determined that the bigger the diameter, the length gets much bigger in comparison. The change in lengths between 0.5 inches and 1 inch (~40 in. to ~120 in.) was already huge but the change from 1 inch to 2 inches (~120 in. to ~630 in.) was massive. I also decided to play around with the force and my assumption was that as the force decreased, the length would increase. And I was proven correct. Changing the force from 450 pounds to 300 pounds increased the length from 39.3 inches to 59.95 inches. I didn't try messing with the elastic modulus or the the maximum elongation number but my assumptions would be as you increase the elastic modulus, the length will increase and as you decrease the maximum elongation number, length will decrease.
+
 
