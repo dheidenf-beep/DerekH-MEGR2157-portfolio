@@ -100,7 +100,7 @@ Once I had the force applied and one end fixed, I had verify the material.
 
 With the correct material, force, and fixed surface, I could then simulate the bar under load. 
 
-The Solidworks Simulation Xpress produced Von Mises stress, Displacement, Factor of Safety, and Deformation in the form of an animation.
+The Solidworks Simulation Xpress produced Von Mises stress, Displacement, Factor of Safety, and Deformation in the form of an animation. Solidworks does exaggerate how far the bar actually displaces to make it more obvious since real world changes are generally near invisible to the naked eye.
 
 ![Stress](Stress-Screenshot.png)
 
@@ -118,6 +118,9 @@ The Solidworks Simulation Xpress produced Von Mises stress, Displacement, Factor
 
 With the data collected, I could draw some actual results from the FEA study.
 
-## FEA Results
+### FEA Results
 
+Using the numbers given from the result of the study, it can be determined that the maximum stress of 2,395 psi is below the yield point of the Aluminum Alloy at 17,200 psi. This means the force of 450 pounds isn't even close to breaking the bar.
+
+The results from the displacement show a maximum displacement of 0.009001 inches which is very close to the maximum allowed elongation of 0.009 inches. 
 
