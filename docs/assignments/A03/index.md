@@ -48,7 +48,11 @@ Once I had the variables in place, I began modeling. The beam was very simple, j
 
 * The bar was then extruded to the length of "L" or 39.30 inches.
 
+Once the length and diameter parameters were in, those were all the measurements I needed for the bar and I could move on to the Finite Element Analysis and parametric testing in Solidworks. 
 
+# Initial Incorrect Bar Calculations
+
+Initially, when I started making the bar, 
 
 ## Communicate
 
