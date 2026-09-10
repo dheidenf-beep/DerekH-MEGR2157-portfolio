@@ -140,6 +140,8 @@ Overall, the beam was proven to be able to withstand the 450 pound force while o
 
 I learned a lot during this assignment. I had never run a proper CAD simulation before and it was very interesting learning to set it up. Same with Finite Element Analysis which I hadn't heard of before this assignment.  Stress concentrations also were not something I had been exposed to before and while I don't fully understand the concept, it seems interesting with how different indents or punctures in a part can have massive effects on the stress. And I now know how to at least somewhat calculate them.
 
+[Bar STL Download](A03-Bar.STL)
+
 **Time Spent on this assignment: 6 Hours**
 
 ### Modified Design Parameters
