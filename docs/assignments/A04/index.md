@@ -196,7 +196,7 @@ With that, the motor mount was finished in CAD.
 
 Once I finished the CAD modeling, I needed to create an engineering drawing of it in the CAD program, following ASME standards. The drawing consists of an isometric view in the top right, a top image, front image, and right side image. All of the necessary dimensions should be in place so that an engineer or manufacturer would be able to reproduce it. I am not sure if it holds up to ASME standards but it was difficult to find documentation on the standards. I used the built in Solidworks template on A size, U.S. paper. 
 
-<iframe src="MotorMountDrawing.pdf" width="100%" height="400px" type="application/pdf">
+<iframe src="MotorMountDrawing.pdf" width="100%" height="600px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="MotorMountDrawing.pdf">Download the PDF</a>.</p>
 </iframe>
 
