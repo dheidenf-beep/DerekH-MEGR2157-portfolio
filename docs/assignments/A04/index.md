@@ -18,11 +18,13 @@ To design the mount, the necessary dimensions needed to be chosen and solved for
 
 To start, I drew a picture which had the necessary motor dimensions I needed to design around. I then drew a free body diagram of the motor to determine the couple produced by the force on the screws that would be acting on feature 1. I started by solving symbolically.
 
-**_PAGE 1 WORK_**
+![Page 1](MEGR-2157-A04-work_page-0001.jpg)
 
 I had some trouble figuring out the couple but I realized later my mistake and it actually simplified my equations. Once I had the moment determined, I looked up the sizes of the screws in the Machinery Handbook. The screws on the motor specifications were M3 screws and I found the maximum head diameter to be 5.50 millimeters. To create some space between the screw holes and the edges of the feature, I took the distance between the screw holes and added 2 times the diameter of the screw heads to each side. Since the distance between the screws was 22 mm, this made the total base dimension 3 times the distance between the screws or 66 mm. I used the 66 mm as my minimum base length and started solving for the height. 
 
-**_PAGE 2-3 WORK_**
+![Page 2](MEGR-2157-A04-work_page-0002.jpg)
+
+![Page 3](MEGR-2157-A04-work_page-0003-cropped.jpg)
 
 I rearranged the equations that were solved to find the base and instead solved for the height. The maximum height or thickness the feature could be was the length of the motor shaft or about 18 mm. I chose a maximum height of 12 mm to give some space on the shaft so the motor would be usable. I assumed the base and length of the feature were the same because the feature is a square. I then solved for the height of feature 1 numerically. 
 
@@ -32,21 +34,21 @@ The elastic modulus for PETG was listed as 1100 MPa.
 
 The max deflection given for the assignment was 0.30 mm for feature 1. 
 
-**_PAGE 4 WORTK_**
+![Page 4](MEGR-2157-A04-work_page-0004.jpg)
 
 The height needed to be under 12 mm in order to pass the criteria I set.
 
-**_PAGE 5 WORK height solve_**
+![Page 5](MEGR-2157-A04-work_page-0005-Cropped.jpg)
 
 Solving both equations for the height gave an initial minimum height of 7.3 mm which was below the 12 mm threshold. The second equation exceeded both the 12 and 18 mm thresholds meaning it wouldn't work since the design uses the maximum dimensions to ensure safety and usability. 
 
 I tried again, this time solving for the base with the constraint of a minimum base of 66 mm and a height of 12 mm. 
 
-**_PAGE 6 base solve_**
+![Page 6](MEGR-2157-A04-work_page-0006.jpg)
 
 Solving for the bases with both equations did not satisfy the criteria of being greater than 66mm. This meant the base of 66 mm was sufficient for the design and the minimum I would go with for Feature 1. Although, I was curious if I could drop the height any because there were very big discrepancies between the 66 mm and what I calculated, so I tried the calculations with a height of 10 mm to see what the base limits would be.
 
-**_PAGE 7 h=10 work_**
+![Page 7](MEGR-2157-A04-work_page-0007-cropped.jpg)
 
 The bases solved for with a height of 10 mm stayed within the 66 mm diameter meaning the feature would still be sufficient with a height of 10mm. This gave feature 1 the final dimensions of 66 x 66 x 10 mm.
 
@@ -54,29 +56,33 @@ The bases solved for with a height of 10 mm stayed within the 66 mm diameter mea
 
 For feature 2, the feature needed to support feature 1 while being able to mount to a rigid wall or ceiling. To start, I drew a free body diagram of the two features together and then I separated them, drawing individual free body diagrams for each feature. I needed to solve for the reaction force in feature 2 on feature 1 to counteract the couple, which I solved to be dependent on the height of feature 2. Whether or not this made my calculations more accurate, I'm not sure but it did lead to a lot of interesting math later.
 
-**_PAGE 8 FBD of features_**
+![Page 8](MEGR-2157-A04-work_page-0008.jpg)
 
 Using the force solved in feature 1, I calculated the couple in the screws that would be supporting feature 2. I used the same base of 66 mm for feature 2 and made it a square. I kept the material choice of PETG to stay consistent and so the design could be 3D printed in one piece if desired. I solved for the couple in feature 2 using the reaction force from feature 1. I forgot a negative sign here that I would notice later as I started calculating the heights. 
 
 Since I had already solved the equations for the height, I didn't need to perform the algebra again and could begin with the numerical calculations. It was here I decided to use the same base to make the two features consistent. It wouldn't make since to have one feature be wider than the other. I decided to use the same M3 screws as before and increases the distance between them to 25 mm. Most of the numbers were the same as before since I kept with PETG. I continued with the same stress factor of 3. Since I assumed the deflection in feature 2 would be zero, that made one of the equations unsolvable. This meant I only had one equation to worry about, which was nice considering the work I put into it. 
 
-**_PAGE 9 feature 2 nums_**
+![Page 9](MEGR-2157-A04-work_page-0009.jpg)
 
 To start, I had to solve the equation for the height again. Since I made the moment dependent on the height, this made for a very difficult task. 
 
-_**PIC**_
+![Page 10-1](MEGR-2157-A04-work_page-0010-cropped-1.jpg)
 
 I ended up creating a polynomial equation of degree three. Since I knew the height couldn't be zero, that meant I could drop it down to a polynomial of degree two. I then used the quadratic formula to solve for the height.
 
-**_PIC_**
+![Page 10-2](MEGR-2157-A04-work_page-0010-cropped-2.jpg)
+
+![Page 11](MEGR-2157-A04-work_page-0011-cropped.jpg)
+
+![Page 12](MEGR-2157-A04-work_page-0012-cropped.jpg)
 
 A number of math errors made it take longer than it should have and I got worried when I got out very large heights. But, I eventually figured it out and ended up with 2 minimum heights of -4.518 and 11.51 mm. Since height couldn't be negative, that meant my minimum height for feature 2 would be 11.51 mm which I round up to 12 mm. 
 
-**_PAGES 10-12 intermitantly_**
-
 With all of the dimensions determined, I could start modeling the motor mount in Solidworks.
 
-**_PAGE 13 iso view_**
+* **Isometric Hand Drawing**
+
+![Isometric Hand Drawing](MEGR-2157-A04-work_page-0013-isometric)
 
 ## CAD Modeling
 
