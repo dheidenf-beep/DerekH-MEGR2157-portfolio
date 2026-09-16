@@ -210,7 +210,7 @@ Overall, this assignment was good practice for complicated statics problems and 
 
 [Motor Mount STL File](MotorMountFinal.STL)
 
-**Time Spent: 7 Hours**
+**Time Spent: 8 Hours**
 
 
 
