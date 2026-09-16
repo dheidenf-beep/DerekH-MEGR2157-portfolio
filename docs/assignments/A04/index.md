@@ -82,7 +82,7 @@ With all of the dimensions determined, I could start modeling the motor mount in
 
 * **Isometric Hand Drawing**
 
-![Isometric Hand Drawing](MEGR-2157-A04-work_page-0013-isometric)
+![Isometric Hand Drawing](MEGR-2157-A04-work_page-0013-isometric.jpg)
 
 ## CAD Modeling
 
