@@ -31,20 +31,22 @@ For the metal of the bracket, I chose Titanium (Ti-6Al-V4). I derived my numbers
 ![Titanium properties](titanium-properties.png)
 
 
+## Bracket Analysis
+
 
 ### Cylinder Feature
 
 For the cylinder feature, I treated it as a cantilever beam. the length was fixed at 0.75 inches, at least as a minimum, which meant I needed to calculate radius. I solved the maximum stress equation for a cantilever beam with a distributed load using the moment of inertia for a cylindrical body to get the radius. I did the same with the deformation equation, solving the equation for the radius
 
-**_Radius eqns_**
+![Cylinder Radius Work](A05-CylRadWork.jpg)
+
+![Cylinder Radius Work](A05-CylRadWork2.jpg)
 
 Once I had the equations solved, I could find the radius.
 
-**_Radius num work_**
-
 I found the minimum radius for the maximum stress and maximum deflection.
 
-**_Radius number work_**
+![Cylinder Number Work](A05-CylRadNumWork.jpg)
 
 I calculated a minimum radius for the stress to be 0.168 inches and a minimum radius for stiffness to be 0.152 inches. I multiplied the numbers by 2 to find the diameter and used the numbers for the width of the supporting beam. 
 
@@ -56,7 +58,7 @@ One assumption I made after when I moved on to creating the main body of the bra
 
 For the supporting beam which attaches the cylinder to the main beam, I modeled it as a beam with an axial force and the deflection as a cantilever beam. This meant I used the stress equation for cross sectional area. I set the width if the supporting beam to be 2 times the radius (a.k.a. the diameter) of the cylinder feature so that the two would be flush when connected. This made the thickness the only unknown which was what I calculated for. 
 
-**_Solved w eqns works_**
+![Initial Supporting Beam Work](A05-SupBeamAlgebra.jpg)
 
 However, I realized that for the deformation equation, I needed the length or height of the bar. I didn't know what to set it as because there was another feature that needed to fit under it. There was a linkage feature to be designed that had to slip onto the cylindrical feature meaning the support beam needed to give enough clearance to allow the linkage to fit. Since I didn't want to just guess, I went ahead and modeled the linkage.
 
@@ -65,35 +67,33 @@ However, I realized that for the deformation equation, I needed the length or he
 
 The linkage feature was to be designed to be able to slip over the cylinder feature and have another hole below that to fit a 1 inch diameter shaft. I used the radius I got from solving for the stress on the cylinder to get the diameter of the top hole and used 1 inch for the diameter of the lower hole. 
 
-**_Linkage inital dtawing_**
+![Linkage Drawing](A05-LinkagePic.jpg)
 
 I assumed both fits for the cylinder feature and 1 inch shaft to be RC2 Running/sliding fits. This was because I figured the linkage shouldn't be able to spin freely but also didn't need the most precision it could have.
 
-Using the RC2 numbers from the table on page **_INSSERT PAGE NUM_** of the Machinery's Handbook, I determined the minimum and maximum possible diameters from the given clearances.
+Using the RC2 numbers from the running/sliding fits table on page 654 of the Machinery's Handbook, I determined the minimum and maximum possible diameters from the given clearances.
 
-**_MAX MIN DIAMETERS_**
+![Linkage Diameters](A05-LinkFits1.jpg)
+
+![Linkage Diameters 2](A05-LinkFits1.jpg)
 
 Using the maximum diameter for the 1 inch hole, I calculated the minimum cross sectional area from the cross section of the linkage at the 1 inch diameter hole. This is where the cross sectional area in the linkage was the least meaning the this area had to be enough to hold the axial load of 2 times 600 lbf or 1200 lbf in total.
 
-**_AREA SOLUTIOn_**
+![Linkage Area](A05-LinkArea.jpg)
 
 Once I had calculated the minimum cross sectional area of the linkage, I set the width equal to an arbitrary measurement and solved for the thickness. 
 
 In this case, I set the width, I called x, equal to 0.05 inches. Since the cross sectional area came out to be 0.020 inches, this gave me a length or thickness, y, equal to 0.04 inches.
 
-**_AREA DIMS CALC_**
-
 Using the radius from the 1 inch diameter hole, I added 2 times the width, x, to the diameter to find the total width of the linkage which came out to be 1.1005 inches. I used the radius from the 
 
-**_TOTAL WIDTH OF LINKAFE_**
+![Linkage Width](A05-LinkWidth.jpg)
 
 This allowed me to fully dimension everything. I solved for the minimum radius of the linkage for the curved edges which came out to be one half of the diameter plus the width of the cross sectional area, x, making 0.55025 inches for the diameter or 1.1005 inches for the total width of the linkage.
 
-**_MIN RAD MATH_**
-
 With that, I could put all the dimensions in a multi view sketch.
 
-**_LINKAGE MULTI VIEW SKETCH_**
+![Linkage Multi View](A05-LinkMultiview.jpg)
 
 
 ### Supporting Beam Feature Finished
@@ -102,19 +102,20 @@ Once I had the linkage calculated, I could take the height or radius from the ce
 
 I then calculated for the width or thickness of the supporting beam using the maximum stress and deformation equations.
 
-**_SUPPORTING BEAM CALCS_**
+![Supporting Beam Calculations](A05-SupBeamNums.jpg)
 
 With the calculations done, the thickness from the stress equation came out to be double the deformation equation. So I went with the stress width. Although, no further calculations down the line would rely on these numbers.
 
 I took all of my dimensions and drew a multi view sketch of the supporting beam.
 
-**_SUPPORTING BEAM SKETCGH_**
+![Supporting Beam Multi View](A05-SupBeamMultiview.jpg)
+
 
 ## Breaking down the Bracket
 
 The bracket was to be made up of several rectangles. For simplicity, I kept the bracket as rectangles with no weird shapes and broke up the rectangles. Making use of symmetry allowed me to cut the force in half from two times the force to just the magnitude of the force or 600 lbf. 
 
-**_FIGURE BNREAKDOWN_**
+![Bracket Feature Breakdown](A05-BracketFeatBreakdownBreakdown.jpg)
 
 This gave me three rectangles I needed to calculated the dimensions for. The assumptions made were that the bracket would be as thick as the cylinder feature, 0.75 inches, and that there would be no failure due to shear stress. I also assumed perfect symmetry and calculated only half of the bracket. 
 
@@ -123,17 +124,21 @@ The dimensions of the T beam were given and since it was meant to be a fit, I us
 
 ### Feature 1 of the Bracket
 
+![Feature 1 Sketch](A05-Feat1Sketch.jpg)
+
 The first feature of the bracket was the uppermost rectangle. I wasn't sure how to model it since it had two forces acting on it, The reaction force from the T beam and the reaction force for the 2nd bracket feature. I ended up cutting the figure in half, leaving me with two smaller rectangles that I modeled as having axial forces. When solving for the rectangle with the known width of b, it turns out I didn't have an unknown. So I just ended up seeing if the stress in that part of the feature was below the maximum stress, which it was. 
 
-**_FEATURE 1 STRES VERUFUCATIUON_**
+![Feature 1 Stress verification](A05-Feat1StressVeri.jpg)
 
 So instead, I moved to the second rectangle with the unknown width I called Z that would attach to the second feature of the bracket. I solved again modeling the rectangle as an axial stress for Z.
 
-**_FINDING MIN Z_**
+![Feature 1 Minimum Z](A05-Feat1MinZ.jpg)
 
 Once I found my Z of 0.027 inches, I solved the whole feature for the height using the deformation equation.
 
-**_FEAT 1 HEIGHT_**
+![Feature 1 Height Knowns](A05-Feat1hDims.jpg)
+
+![Feature 1 Height Math](A05-Feat1hSolved.jpg)
 
 With the height found, I successfully had found all of the parameters for the first feature.
 
@@ -142,37 +147,80 @@ With the height found, I successfully had found all of the parameters for the fi
 
 For feature 2, I again modeled it as a beam with an axial force. This feature was easier than the first one because I only had to break it into one rectangle. I solved for Z using the axial stress equation and axial deflection equation.
 
-**_FEAT 2 STRESS STIFF CALC_**
+![Feature 2 Stiffness Z Work](A05-Feat2StiffZ.jpg)
 
-The Z calculation for stress came out to be 
+The Z calculation for stress came out to be 0.0267 inches, just below the 0.027 inch value from feature 1. 
+
+The Z calculation for stiffness was much lower at 0.0158 inches. Since the stress measurement was greater than the stiffness measurement, I went with the stress. However, I waited to calculate the minimum Z for feature 3 in case it had a higher Z value for both stress and stiffness.
 
 
 ### Feature 3 of the Bracket
 
+For feature 3, I analyzed half of the figure and cut the width in half. The unknowns were the height of the feature and the Z section of the width where feature 3 intersects with feature 2. I solved for Z using the cross sectional area equation for stress and looking at the specific area that the force acted upon.
 
-## Bracket Analysis
+![Feature 3 Stress Z Work](A05-Feat3StressZ.jpg)
+
+The Z value came out to be 0.267 inches. This meant the Z value for stress for feature 3 and feature 2 were the same and the Z value for stress in feature 1 was slightly higher. This meant I used the feature 1 Z value for my unknown width across all three features. 
+
+There was still the height to solve for so I first solved for it using the stiffness equation and then the stress equation for a cantilever beam. 
+
+![Feature 3 Stiffness H Work](A05-Feat3hStiff.jpg)
+
+![Feature 3 Stress H Work](A05-Feat3hStress.jpg)
+
+This gave a height of 0.370 inches for stress and 0.236 inches for stiffness. I then found the total width of feature 3 by adding up 2 times the b dimension plus the a dimension plus 2 time Z for both stress and stiffness.
+
+![Feature 3 Width](A05-Feat3Width.jpg)
+
+With all of the parameters determined, I could create the multi view sketches of the bracket.
+
+
+## Bracket Sketches
+
+As per the assignment instructions, I created two multi view sketches of the bracket. One with the dimensions calculated using stress and the other with dimensions using deformation or stiffness.
+
+Unfortunately, the drawings got kind of messy at times as I redid the math on certain dimensions after noticing errors.
+
+I created isometric sketches with a front, top, and side view for both, changing the dimensions for each one.
 
 
 ### Stress Analysis
 
 
+![Bracket Stress Multi view](A05-BracketStressMultiview.jpg)
+
+The stress dimensions are more likely to be accurate due to the fact that I used those dimensions more frequently since the stress ended up being higher than the stiffness for every calculation. Every dimension should be accounted for. The top drawing doesn't have any dimensions because I dimension everything in the front and side views.
+
+
 ### Stiffness Analysis
 
+![Bracket Stiffness Multi view](A05-BracketStiffnessMultiview.jpg)
 
-Governing failure mode: For at least one feature, state whether stress or stiffness governed the final dimension, and by how much (e.g., "stress required 0.25", stiffness required 0.31"). If they were close, say so — a near-tie is itself a lesson.
-
-Error propagation: Identify one instance where a value from an earlier feature carried into a later one. Did an early error (or a late catch) change a downstream result? If nothing propagated incorrectly, state what check caught it before it could.
-
-There were a couple times I thought I calculated something like the radius of the linkage wrong which affected the width of the linkage. I also used a lower deformation number (0.05 instead of 0.005) a couple times which made my values lower than 
-
-Assumption sensitivity: Name one assumption you made (material choice, shear negligibility, load distribution, etc.) and describe what would change in your final dimensions if that assumption were wrong or different.
+For the stiffness sketch, I tried to label every dimension that changed using a blue pen. The radius of the cylinder feature and thicknesses of the three features making up the main bracket part were the primary dimensions to change. Everything else stayed the same from the stress sketch.
 
 
 ## Lessons Learned
+
+**Governing failure mode:** _For at least one feature, state whether stress or stiffness governed the final dimension, and by how much (e.g., "stress required 0.25", stiffness required 0.31"). If they were close, say so — a near-tie is itself a lesson._
+
+Generally, the stress values governed the final dimension. It usually wasn't that close either. The stiffness dimensions were consistently around half of the stress values. For example, the radius of the cylinder feature, the stiffness equation calculated a diameter of 0.152 inches while the stress equation calculated a diameter of 0.337 inches or about 0.185 inches of difference. 
+
+
+**Error propagation:** _Identify one instance where a value from an earlier feature carried into a later one. Did an early error (or a late catch) change a downstream result? If nothing propagated incorrectly, state what check caught it before it could._
+
+There were a couple times I thought I calculated something like the radius of the linkage wrong which affected the width of the linkage. There was also some confusion calculating the Z value for features 1,2, and 3. That mistake did cause me to have to redo the calculations for the three features a few times because that Z value affected all of the features in the main bracket. The main result that came out of the error were values that seemed way too low, which gave me a hint to recheck my math. I also used a lower deformation number (0.05 instead of 0.005) a couple times which made my values lower than should have but that isn't directly connected to a calculated value.
+
+
+**Assumption sensitivity:** _Name one assumption you made (material choice, shear negligibility, load distribution, etc.) and describe what would change in your final dimensions if that assumption were wrong or different._
+
+Introducing shear stress calculations would be very intriguing to me for this calculation. If shear stress couldn't be assumed to be basically nonexistent, it would heavily change the calculations for every feature. The cylinder and supporting beam would need another set of calculations for shear stress to make sure the cross sectional area between the cylinder and supporting beam could hold the load. There would be another calculation needed at the top of the supporting beam to make sure the connection with the main body of the bracket could hold the beam and cylinder. The Z dimension in features 1, 2, and 3 would need to be calculated different, taking into account the cross sectional areas between the features. Overall, it would make the assignment much more difficult but much more realistic. 
+
 
 ## Resources
 
 Machinery's Handbook 32nd Edition
 
 [Uline Heavy Duty Polyester Cord Strapping](https://www.uline.com/Product/Detail/S-12925/Poly-Cord-Strapping/Heavy-Duty-Polyester-Cord-Strapping-3-4-x-2500?pricode=WA9239&gadtype=pla&id=S-12925)
+
+Solidworks Material Selection
 
