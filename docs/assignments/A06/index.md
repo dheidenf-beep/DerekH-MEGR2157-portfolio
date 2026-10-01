@@ -4,7 +4,7 @@
 
 The objective of the 6th assignment was to create a parametric CAD model of the bracket and linkage designed in the previous assignment to hold a certain force using a specific cable and create an engineering drawing based on that CAD model.
 
-![Problem Prompt](A05-visual-problem)
+![Problem Prompt](A05-visual-problem.png)
 
 
 ## Parametric Design
