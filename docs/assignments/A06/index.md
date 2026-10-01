@@ -19,7 +19,7 @@ After that, I put it every number, equation, and parameter I could in to the "eq
 
 ![Bracket Equations](BracketEquations.png)
 
-This meant every single measurement and parameter were now in a single place and easy to manage. Inputting the equations also corrected any math errors that I didn't catch before. I incorrectly calculated the height of the lower rectangle in the bracket as 0.370 inches while Solidworks calculated it to be 0.2376 inches. Having all of the equations and measurements in place made it much easier to edit a dimension if I made an error since I wouldn't have to manually redo the equations each time. I included Several of the linkage dimensions because I made the supporting beam for the cylinder dependent on the values from the linkage. At some point, I made a mistake of making the diameter of the linkage 1.005 inches instead of 1 inch. But since I had all my equations in place, all I had to do was change the dimension to 1 inch and everything fixed itself for me. The use of parametric dimensions was incredibly helpful throughout the modeling process.
+This meant every single measurement and parameter were now in a single place and easy to manage. Inputting the equations also corrected any math errors that I didn't catch before. I incorrectly calculated the height of the lower rectangle in the bracket as 0.370 inches while Solidworks calculated it to be 0.2376 inches. Having all of the equations and measurements in place made it much easier to edit a dimension if I made an error since I wouldn't have to manually redo the equations each time. I included Several of the linkage dimensions because I made the supporting beam for the cylinder dependent on the values from the linkage. At some point, I made a mistake of making the diameter of the linkage 1.005 inches instead of 1 inch.  But since I had all my equations in place, all I had to do was change the dimension to 1 inch and everything fixed itself for me. The only dimension I still wasn't sure about was the thickness of the middle section. On the finished design, the middle supports are very thin, but no matter how many times I ran the math either by hand or in Solidworks, I ended up with the same thin width. The use of parametric dimensions was incredibly helpful throughout the modeling process.
 
 For the bracket, I chose the dimensions of stress for every equation because the stress values ended up higher than the deformation values. 
 
@@ -124,7 +124,7 @@ With that, the linkage model was finished. It was nice having relative dimension
 
 Creating the bracket drawing was fairly straight forward. The trickiest part was ensuring that the drawing was dimensioned enough but not too much and trying to account for the space in for that.
 
-![Bracket Drawing](A05-bracket-drawing.jpeg)
+![Bracket Drawing](A05-bracket-drawing.jpg)
 
 [Bracket Drawing PDF](A05-bracket-drawing.pdf)
 
@@ -135,7 +135,7 @@ Since the bracket was created over three sliding fits, the inside dimensions of 
 
 Creating the linkage drawing was mostly the same as the bracket drawing. There was much less to dimension, making the drawing look cleaner by comparison. 
 
-![Linkage Drawing](A05-linkage-drawing.jpeg)
+![Linkage Drawing](A05-Linkage-drawing.jpg)
 
 [Linkage Drawing PDF](A05-Linkage-drawing.pdf)
 
@@ -144,7 +144,36 @@ The Linkage had two sliding fits for both of the holes for the two shafts. These
 
 ## Lessons Learned
 
-Identify the analytical equation (stiffness or strength) you used to drive at least one dimension in your parametric model, and name which specific dimension it controlled. Describe how you expressed that equation directly in the CAD software (e.g., as an equation/expression tied to the parameter) rather than typing in a value you calculated by hand elsewhere. If your calculation changed later in the assignment, describe exactly what happened to that dimension and whether the rest of the model responded on its own or required manual rework.
+* **Identify the analytical equation (stiffness or strength) you used to drive at least one dimension in your parametric model, and name which specific dimension it controlled. Describe how you expressed that equation directly in the CAD software (e.g., as an equation/expression tied to the parameter) rather than typing in a value you calculated by hand elsewhere. If your calculation changed later in the assignment, describe exactly what happened to that dimension and whether the rest of the model responded on its own or required manual rework.**
 
-Pick one dimension on your drawing where you applied a tighter tolerance class (e.g., X.XXX ± .005) and one where you applied a looser class (e.g., X.X ± .02). For each, identify whether that feature is a mating/functional surface (like a sliding fit interface) or a non-critical feature, and explain why that functional role justified the tolerance class you chose. If you applied the tightest tolerance across your drawing by default, describe what happens to manufacturing cost or feasibility when a non-critical feature is held to an unnecessarily tight tolerance.
+Stress drove every equation and parameter. Every calculation I performed had a higher stress value. All of the height values in the bracket components (the three rectangles) were all stress driven. The thickness of the supporting beam was also stress driven. Stress was the primary component driven every equation I had. I wrote all of the equations directly into Solidworks because I figured it would catch any errors and made (which it did) and it made it so every time I wanted to iterate a single dimension, I didn't have to recalculate every other dimension by hand. Whenever I modified a length or base dimension, the height of each component would automatically be solved for, which allowed me to test dimensions at a very quick pace.
 
+
+* **Pick one dimension on your drawing where you applied a tighter tolerance class (e.g., X.XXX ± .005) and one where you applied a looser class (e.g., X.X ± .02). For each, identify whether that feature is a mating/functional surface (like a sliding fit interface) or a non-critical feature, and explain why that functional role justified the tolerance class you chose. If you applied the tightest tolerance across your drawing by default, describe what happens to manufacturing cost or feasibility when a non-critical feature is held to an unnecessarily tight tolerance.**
+
+The sliding fits on the bracket cylinder and holes on the linkage as well as the sliding fits on the bracket were very tight tolerances, to 0.0005 inches. This was necessary to allow the bracket to be able to slide on and off while also keeping a fairly good connection. There weren't many places I used less strict tolerances. On the bracket especially, I could've used a looser tolerance like X.X = +- 0.2 inches or something similar. Since I kept the tolerances tighter, that would make machining the part and producing it much more difficult and expensive due to the needed precision on each part of the bracket.
+
+
+* **Describe lessons learned about ensuring part-to-part compatibility through tolerancing.**
+
+The tolerance on the sliding fits taught me the most about part-to-part compatibility since the shaft and hole have different tolerances needed to be able to fit together. The tolerances on shafts and holes for sliding fits cannot be larger than the maximum size. For example, the diameter of the cylinder on the bracket is about 0.337 inches. The tolerances for the shaft can be slight under 0.337 inches but cannot be over. It is the same for the hole as well. This fact made it more clear the connection of parts through tolerance.
+
+
+* **Reflect on how dimensioning and tolerancing communicates design intent and functional requirements in your design.**
+
+Dimensioning and tolerancing communicates design intent by describing what should be created and to what level of detail, acting as guidelines and rules. Looser tolerances correlates to a cheaper, less precise, or less important level of detail while high tolerances are for parts that need high detail, accuracy, or are meant to fit together tightly. Dimensioning and tolerancing also describe the functional requirements of a part by displaying what the part needs to be able to fit with and how tightly or precisely. Something that has very tight tolerances is likely going to end up closer to a precision instrument or something complicated like a small electrical circuit while something with loose tolerances is more likely something independent that has more degrees of freedom and isn't constrained to a precise box.
+
+[Bracket Solidworks CAD Download](A05-bracket.SLDPRT)
+
+[Linkage Solidworks CAD Download](A05-Linkage.SLDPRT)
+
+
+**Time Spent:** 5 Hours
+
+## Resources
+
+Machinery's Handbook 32nd Edition
+
+[Uline Heavy Duty Polyester Cord Strapping](https://www.uline.com/Product/Detail/S-12925/Poly-Cord-Strapping/Heavy-Duty-Polyester-Cord-Strapping-3-4-x-2500?pricode=WA9239&gadtype=pla&id=S-12925)
+
+Solidworks Material Selection
