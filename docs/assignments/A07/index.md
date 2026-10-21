@@ -74,7 +74,7 @@ Def 3 = 0.02774
 |-----------|-------------------|-------------------|---------------|
 | Max Stress |  |  | |
 | Max Deflection and Location |  |  | |
-| Mass |  |  | |
+| Mass | 0.13 lbs |  | |
 | Safety Factor |  |  | |
 | Number of Elements |  |  | |
 
