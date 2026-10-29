@@ -8,15 +8,67 @@ The objective of this assignment was to design and create a gearbox using pre-ma
 
 ### Determing Sufficient Diameter
 
-<img width="1275" height="1618" alt="A08-gears_work_pages-to-jpg-0001" src="https://github.com/user-attachments/assets/270214e9-2a59-49fa-9e0e-6c1824d9cf08" />
+The assignment listed two geats to use from the McMaster website with a pinion gear and larger gear. The pinion gear had 9 and was the input gear. The larger gear had 24 teeth and was the output gear. The diameter of each shaft was given at 0.25 inches for the input shaft and 0.125 inches for the output shaft. Both shafts were the same length at 1 inch long. The rotation of the output gear was given at 1100 RPM with a torque of 1.25 lbf-in. The material was assumed to be steel. 
+
+Using the rotation of the output gear and the gear ratio, I was able to calculate the speed and torque of the pinion gear. 
+
+<img width="1163" height="681" alt="A08-gears_work_pic_1" src="https://github.com/user-attachments/assets/61ff18ee-e32f-41d5-bacd-dba1dcc2663d" />
+
+For the pinion gear, the rotation was 2933.33 RPM with 0.4688 in.-lbf of torque. 
+
+When I had the torques, I could then calculate if the given diameters were sufficient for the torque load. The loading shaft shear stress had to remain under 4000 psi and the output shaft needed to remain under 6000 psi. I used the shear stress equation combining torque, radius, and polar moment of inertia to solve for the actual shear stresses. 
+
+<img width="1132" height="692" alt="A08-gears_work_pic_2" src="https://github.com/user-attachments/assets/9b76c055-8db2-433b-a4d1-43576564d505" />
+
+The calculated shear stress on the shafts was found to be well below the maximum values meaning the shaft diameters were sufficient for the load. 
+
 
 ### Determining PV Values for Bearings
 
-<img width="1275" height="1598" alt="A08-gears_work_pages-to-jpg-0002" src="https://github.com/user-attachments/assets/24b2a79e-7270-4623-9706-7f1ce7b81193" />
+With the shear stress determined and shaft diameters verified, the next step was calculating the PV values on the affective area of the shaft in order to find suitable bearings. 
+
+I chose a thickness of 3/8 inches meaning the affective area would be the diameter times the thickness. To solve for the pressure, I needed the tangential force on the gears. To determine the tangential force on the gears, I used the equation for tangential force that is 2 times the torque on the gears divided by the gears pitch diameter. To find the pitch diameter, I looked on the McMaster website. 
+
+From the website, I found the pitch diameter of the larger gear to be 1 inch and the pinion gear to be 3/8 inches.
+
+With that, I could then calculate the tangential force and pressure.
+
+<img width="1033" height="756" alt="A08-gears_work_pic_3" src="https://github.com/user-attachments/assets/b9a72d22-372d-4942-b395-cbffe53706c4" />
+
+Next to calculate the velocity, I needed to convert from RPM to radians and then multiply by the diameter. This meant I just needed to multiply by an extra factor of pi to get the correct units of ft/min.
+
+Once I had the velocity, I then just needed to multiply it by the pressure to get the PV values. 
+
+<img width="1070" height="592" alt="A08-gears_work_pic_4" src="https://github.com/user-attachments/assets/612adb03-a043-477d-b42c-a1ef140a4dc6" />
+
+I referred to the bearing material chart in the Machinery's Handbook and found the material with the minimum PV value that could support the shafts was dry graphite at 15,000 psi-ft/min. 
+
+Using this information, I looked for bearings on the McMaster website that had a sufficient PV value. The bearings I found were high-temperature graphite-lubricated sleeve bearings with a PV value of 40,000 psi-ft/min.
+
+**Input Shaft**
+
+<img width="960" height="564" alt="GearboxScreenshot (68)" src="https://github.com/user-attachments/assets/385ca60b-89fd-4602-91a6-3f86a5c8e1eb" />
+
+<img width="540" alt="InputShaftStats" src="https://github.com/user-attachments/assets/d7bb34be-ef3b-4fd7-96bb-ad1b29362d26" />
+
+---------------------------
+
+**Output Shaft**
+
+<img width="960" height="564" alt="GearboxScreenshot (67)" src="https://github.com/user-attachments/assets/93c8662e-917f-4592-b1b7-8108afcc4c96" />
+
+<img width="540" alt="OutputShaftStats" src="https://github.com/user-attachments/assets/f9250049-3257-4a1f-b235-00a3d414704b" />
+
+These shafts were more than sufficient for the application. The last step I needed to go through before I could model the gearbox the was to determine the tolerances.
+
 
 ### Fit Selection
 
+For the shafts, I went with an RC2 Running Sliding fit. And to put the gearbox together, I used an LC2 Locational Clearance Fit. The tolerances for each respective fit from the table in the Machinery's Handbook are shown below.
+
 <img width="1275" height="1606" alt="A08-gears_work_pages-to-jpg-0003" src="https://github.com/user-attachments/assets/5800e25f-1fb6-4033-a339-2904d06c394d" />
+
+With this final part done, I could finally move onto modeling the gearbox.
 
 
 ## CAD Modeling
@@ -278,9 +330,9 @@ With this design, the shafts aren't fully support. The distances from the outsid
 
 ## Lessons Learned
 
+This assignment taught me a lot about applying gear equations and determining safe limits for various real parts. Needing to determine the minimum safe limit for the bearings and then needing to search and find bearings that fulfilled that minimum requirement was a good exericse in website searching and checking the specifications of different parts. Determining tangential forces and PV values was all entirely new to me. This assignment also continued to test and improve my ability to create assemblies and drawings in Solidworks. 
 
-
-**Time Spent:** 8 Hours
+**Time Spent:** 9 Hours
 
 ### CAD File Downloads
 
@@ -303,7 +355,7 @@ With this design, the shafts aren't fully support. The distances from the outsid
 
 [Metal Gear](https://www.mcmaster.com/7880K24/)
 
-[Metal Gear Journal Bearing](https://www.mcmaster.com/9368T14/)
+[Metal Gear Journal Bearing]()
 
 [Pinion Gear Journal Bearing](https://www.mcmaster.com/9368T97/)
 
