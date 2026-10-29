@@ -294,37 +294,37 @@ With this design, the shafts aren't fully support. The distances from the outsid
 
 **Gearbox Drawing**
 
-<iframe src="GearBox.pdf" width="100%" height="800px" type="application/pdf">
+<iframe src="GearBox.pdf" width="100%" height="700px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="GearBox.pdf">Download the PDF</a>.</p>
 </iframe>
 
 **Gearbox Base Drawing**
 
-<iframe src="GearBoxBase2.pdf" width="100%" height="800px" type="application/pdf">
+<iframe src="GearBoxBase2.pdf" width="100%" height="700px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="GearBoxBase2.pdf">Download the PDF</a>.</p>
 </iframe>
 
 **Input Shaft Drawing**
 
-<iframe src="shaft-1.pdf" width="100%" height="800px" type="application/pdf">
+<iframe src="shaft-1.pdf" width="100%" height="700px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="shaft-1.pdf">Download the PDF</a>.</p>
 </iframe>
 
 **Output Shaft Drawing**
 
-<iframe src="shaft-output.pdf" width="100%" height="800px" type="application/pdf">
+<iframe src="shaft-output.pdf" width="100%" height="700px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="shaft-output.pdf">Download the PDF</a>.</p>
 </iframe>
 
 **Pinion Journal Bearing Drawing**
 
-<iframe src="pinion_journal_bearing.pdf" width="100%" height="800px" type="application/pdf">
+<iframe src="pinion_journal_bearing.pdf" width="100%" height="700px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="pinion_journal_bearing">Download the PDF</a>.</p>
 </iframe>
 
 **Gear Journal Bearing Drawing**
 
-<iframe src="gear_journal_bearing.pdf" width="100%" height="800px" type="application/pdf">
+<iframe src="gear_journal_bearing.pdf" width="100%" height="700px" type="application/pdf">
   <p>Your browser does not support PDFs. <a href="gear_journal_bearing.pdf">Download the PDF</a>.</p>
 </iframe>
 
