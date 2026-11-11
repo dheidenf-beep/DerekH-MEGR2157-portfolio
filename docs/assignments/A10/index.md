@@ -12,7 +12,7 @@ Using the calculated parameters for the lead screws and crosshead, I began model
 
 ### Crosshead Modeling
 
-The crosshead was fairly simple to model, just an extruded rectangular prism with three holes cut out of it. In the parametric equations, the only change I needed to make was to increase the hole size form 8mm to 0.375 inches to support the diameter of the lead screw.
+The crosshead was fairly simple to model, just an extruded rectangular prism with three holes cut out of it. In the parametric equations, the only change I needed to make was to increase the hole size from 8mm to 0.375 inches to support the diameter of the lead screw.
 
 ![CrossheadCAD7](CrossheadCAD7.png)
 
@@ -24,7 +24,7 @@ The crosshead was fairly simple to model, just an extruded rectangular prism wit
 
 ![CrossheadCAD10](CrossheadCAD10.png)
 
-For the material, Solidworks didn't have 301 stainless steel as an option. Instead, I searched for the next closest steel with nearly the same properties. The steel I found was wrought stainless steel which has a yield strength of 206 Mpa and an elastic modulus of 200,000 MPa. This was slightly above the the original yield strength and elastic modulus of 205 and 193,000 MPa respectively.
+For the material, Solidworks didn't have 301 stainless steel as an option. Instead, I searched for the next closest steel with nearly the same properties. The steel I found was wrought stainless steel which has a yield strength of 206 MPa and an elastic modulus of 200,000 MPa. This was slightly above the original yield strength and elastic modulus of 205 and 193,000 MPa respectively.
 
 ![CrossheadCAD11](CrossheadCAD11.png)
 
@@ -102,9 +102,9 @@ The next step was to perform Finite Element Analysis on the crosshead. I used th
 **First Iteration:**
 | Max Quantity | Initial Value (Standard Mesh Density) | Final Value (Finest Mesh Density | Percent Discrepancy | Convergence |  |
 | -------- | :-------: | :-------: | :-------: | :-------: |  :-------: |
-| Stress: 206.807e^8 N/mm^2  | 5.463e^7 N/mm^2 | 5.551e^7 N/mm^2 | 1.5979% | Converged | ![CrossheadFEA5](CrossheadFEA5.png) |
-| Displacement: 0.1 mm  | 1.329e^-2 mm | 1.336e^2 mm | 0.5253% | Converged | ![CrossheadFEA7](CrossheadFEA7.png) |
-| Safety Factor: 4  | 3.78568 | 3.7256 | 1.5997% | Converged | ![CrossheadFEA8](CrossheadFEA8.png) |
+| Stress: 206.807e^8 N/mm^2  | 5.463e^7 N/mm^2 | 5.551e^7 N/mm^2 | 1.5979% | Converged | <img width="960" height="564" alt="CrossheadFEA5" src="CrossheadFEA5.png" /> |
+| Displacement: 0.1 mm  | 1.329e^-2 mm | 1.336e^2 mm | 0.5253% | Converged | <img width="960" height="564" alt="CrossheadFEA7" src="CrossheadFEA7.png" /> |
+| Safety Factor: 4  | 3.78568 | 3.7256 | 1.5997% | Converged | <img width="960" height="564" alt="CrossheadFEA8" src="CrossheadFEA8.png" /> |
 Iteration 1 Mass: 1.69 pounds
 
 For the first iteration, the only parameter that was not below the desired value was the safety factor. To rectify this, an extra 5 mm was added to each side of the crosshead.
@@ -116,9 +116,9 @@ For the first iteration, the only parameter that was not below the desired value
 **Second Iteration** (5 mm added to length, base, and height):
 | Max Quantity | Initial Value (Standard Mesh Density) | Final Value (Finest Mesh Density | Percent Discrepancy | Convergence |  |
 | -------- | :-------: | :-------: | :-------: | :-------: | :-------: |
-| Stress: 206.807e^8 N/mm^2  | 2.874e^7 N/mm^2 | 3.015e^7 N/mm^2 | 4.7886% | Converged | ![CrossheadFEA5](CrossheadFEA17.png) |
-| Displacement: 0.1 mm  | 6.530e^-3 mm | 6.381e^2 mm | 2.3081% | Converged | ![CrossheadFEA5](CrossheadFEA18.png) |
-| Safety Factor: 4  | 7.19514 | 6.85999 | 4.7691% | Converged | ![CrossheadFEA5](CrossheadFEA19.png) |
+| Stress: 206.807e^8 N/mm^2  | 2.874e^7 N/mm^2 | 3.015e^7 N/mm^2 | 4.7886% | Converged | <img width="960" height="564" alt="CrossheadFEA17" src="CrossheadFEA17.png" /> |
+| Displacement: 0.1 mm  | 6.530e^-3 mm | 6.381e^2 mm | 2.3081% | Converged | <img width="960" height="564" alt="CrossheadFEA18" src="CrossheadFEA18.png" /> |
+| Safety Factor: 4  | 7.19514 | 6.85999 | 4.7691% | Converged | <img width="960" height="564" alt="CrossheadFEA19" src="CrossheadFEA19.png" /> |
 Iteration 2 Mass: 2.617 pounds
 
 The second iteration converged well below every parameter. The extra 5 mm made the crosshead about a pound heavier. A more efficient design could certainly be achieved but this design was sufficient for the assignment.
