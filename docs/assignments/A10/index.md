@@ -109,9 +109,6 @@ The next step was to perform Finite Element Analysis on the crosshead. I used th
 | ----- | <img width="320" height="188" alt="CrossheadFEA8" title="Stress" src="CrossheadFEA8.png" /> Stress | <img width="320" height="188" alt="CrossheadFEA7" title="Displacement" src="CrossheadFEA7.png" /> Displacement | <img width="320" height="188" alt="CrossheadFEA5" title="Safety Factor" src="CrossheadFEA5.png" /> Safety Factor | ----- |
 
 
-
-
-
 Iteration 1 Mass: 1.69 pounds
 
 For the first iteration, the only parameter that was not below the desired value was the safety factor. To rectify this, an extra 5 mm was added to each side of the crosshead.
@@ -127,10 +124,8 @@ For the first iteration, the only parameter that was not below the desired value
 | Stress: 206.807e^8 N/mm^2  | 2.874e^7 N/mm^2 | 3.015e^7 N/mm^2 | 4.7886% | Converged |
 | Displacement: 0.1 mm  | 6.530e^-3 mm | 6.381e^2 mm | 2.3081% | Converged |
 | Safety Factor: 4  | 7.19514 | 6.85999 | 4.7691% | Converged | 
+| ----- | <img width="320" height="188" alt="CrossheadFEA19" title="Stress" src="CrossheadFEA19.png" /> Stress | <img width="320" height="188" alt="CrossheadFEA17" title="Displacement" src="CrossheadFEA17.png" /> Displacement | <img width="320" height="188" alt="CrossheadFEA18" title="Safety Factor" src="CrossheadFEA18.png" /> Safety Factor | ----- |
 
-<img width="320" height="188" alt="CrossheadFEA19" title="Stress" src="CrossheadFEA19.png" />
-<img width="320" height="188" alt="CrossheadFEA17" title="Displacement" src="CrossheadFEA17.png" />
-<img width="320" height="188" alt="CrossheadFEA18" title="Safety Factor" src="CrossheadFEA18.png" />
 
 Iteration 2 Mass: 2.617 pounds
 
