@@ -100,16 +100,17 @@ The next step was to perform Finite Element Analysis on the crosshead. I used th
 **Convergence: > 7%**
 
 **First Iteration:**
+
 | Max Quantity | Initial Value (Standard Mesh Density) | Final Value (Finest Mesh Density | Percent Discrepancy | Convergence |
 | -------- | :-------: | :-------: | :-------: | :-------: |
 | Stress: 206.807e^8 N/mm^2  | 5.463e^7 N/mm^2 | 5.551e^7 N/mm^2 | 1.5979% | Converged |
 | Displacement: 0.1 mm  | 1.329e^-2 mm | 1.336e^2 mm | 0.5253% | Converged | |
 | Safety Factor: 4  | 3.78568 | 3.7256 | 1.5997% | Converged |
+| ----- | <img width="320" height="188" alt="CrossheadFEA8" title="Stress" src="CrossheadFEA8.png" /> Stress | <img width="320" height="188" alt="CrossheadFEA7" title="Displacement" src="CrossheadFEA7.png" /> Displacement | <img width="320" height="188" alt="CrossheadFEA5" title="Safety Factor" src="CrossheadFEA5.png" /> Safety Factor | ----- |
 
 
-<img width="320" height="188" alt="CrossheadFEA8" title="Stress" src="CrossheadFEA8.png" /> 
-<img width="320" height="188" alt="CrossheadFEA7" title="Displacement" src="CrossheadFEA7.png" /> 
-<img width="320" height="188" alt="CrossheadFEA5" title="Safety Factor" src="CrossheadFEA5.png" /> 
+
+
 
 Iteration 1 Mass: 1.69 pounds
 
@@ -120,6 +121,7 @@ For the first iteration, the only parameter that was not below the desired value
 ![CrossheadFEA16](CrossheadFEA16.png)
 
 **Second Iteration** (5 mm added to length, base, and height):
+
 | Max Quantity | Initial Value (Standard Mesh Density) | Final Value (Finest Mesh Density | Percent Discrepancy | Convergence |
 | -------- | :-------: | :-------: | :-------: | :-------: |
 | Stress: 206.807e^8 N/mm^2  | 2.874e^7 N/mm^2 | 3.015e^7 N/mm^2 | 4.7886% | Converged |
