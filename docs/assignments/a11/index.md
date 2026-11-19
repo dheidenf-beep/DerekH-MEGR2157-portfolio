@@ -3,7 +3,11 @@
 ## Objective
 
 
-## Analyze
+## Motor Mount CAD Modeling - Derek Heidenfelder
+
+### Bracket Verification
+
+## Motor Mount FEA - Derek Heidenfelder
 
 Solidworks Simulation XPress cannot model moments or torques. This means no twisting analysis. The torque from the motor was added on as extra downward force.
 
@@ -20,7 +24,13 @@ Solidworks Simulation XPress cannot model moments or torques. This means no twis
 
 * _The percent difference is calculated with the equation 2(xf-xi)/(xi+xf) where xi is the original number and xf is the new number_
 
-0.1 inch fillet to every edge.
+The first pass saw all of the values converge while remaining under the necessary values.
+
+To improve the model, I add a 0.1 inch fillet to every edge, including the inside edges.
+
+<img width="960" height="564" alt="MotorMount (38)" src="https://github.com/user-attachments/assets/38605acd-7fce-4d68-9220-d855e536f8e2" />
+
+<img width="960" height="564" alt="MotorMount (39)" src="https://github.com/user-attachments/assets/ac437574-e6ad-452c-97dc-9a8e11ab2d89" />
 
 | Design I | Iteration I | % Difference  | Iteration II | % Difference | Iteration III | % Difference | Convergence | Under Min Parameter?
 |-----------|-------------------|-------------------|---------------|---------------|---------------|---------------|---------------|---------------|
@@ -33,8 +43,20 @@ Solidworks Simulation XPress cannot model moments or torques. This means no twis
 | **Second Iteration Images** | <img width="960" height="564" alt="Iter2 (1)" src="https://github.com/user-attachments/assets/42be7226-206c-48e8-8523-6367985423f4" /> Safety Factor | | <img width="960" height="564" alt="Iter2 (2)" src="https://github.com/user-attachments/assets/9fb211b9-0cdd-43ef-a045-1d5e84f2dd72" /> Deflection | | <img width="960" height="564" alt="Iter2 (3)" src="https://github.com/user-attachments/assets/f9ccb40f-fa7d-4a31-9961-4c1a4889ec2b" /> Stress |
 | **Third Iteration Images** | <img width="960" height="564" alt="Iter3 (1)" src="https://github.com/user-attachments/assets/24ea4b52-fcf0-44a4-9413-fe4452bfcbc7" /> Safety Factor | | <img width="960" height="564" alt="Iter3 (2)" src="https://github.com/user-attachments/assets/5125f45a-45b1-4bcc-adcf-1422c37e2b04" /> Deflection | | <img width="960" height="564" alt="Iter3 (3)" src="https://github.com/user-attachments/assets/857b3afa-fbba-4ed4-9e9d-941dd8f6014a" /> Stress |
 
+This improvement seems to have slightly decreased the stress on the bracket.
 
-## Decide
-_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
+### Failed Channel FEA
 
-## Communicate
+For the next FEA section, the part that was being used for the sides of the tensile tester to support it was meant to undergo an FEA evaluation. Since I used the 3ft channel from the McMaster website, I intended to analyze it using FEA. However, due to the limitations of the free Solidworks Xpress simulation software, the part was too complex to be meshed no matter how much I decreased the mesh density.
+
+<img width="960" height="564" alt="AttemptedChannelFEA (3)" src="https://github.com/user-attachments/assets/6df5902c-288c-4c37-b7a2-a5abf1dab455" />
+
+<img width="960" height="564" alt="AttemptedChannelFEA (4)" src="https://github.com/user-attachments/assets/c5b41c07-6110-43c0-952d-40ea105a0459" />
+
+## Engineering Drawings - Derek Heidenfelder
+
+
+
+## Lessons Learned
+
+### CAD File Downloads
