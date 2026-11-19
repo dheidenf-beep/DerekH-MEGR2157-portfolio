@@ -227,10 +227,13 @@ This is the final design for our tensile tester, fully modeled and assembled in 
 
 ## Bill of Materials and Labor Costs
 
+<img width="1058" height="620" alt="BillofMaterials" src="https://github.com/user-attachments/assets/17aa93c3-30a8-46cd-aaaa-6aef981b72ee" />
 
+[Bill of Materials Link](https://docs.google.com/spreadsheets/d/1d3zPM9qTAD2xI5mtjdZwyoto9V0ia1Z_PmTb0rxO4MQ/edit?usp=sharing)
 
 ## Lessons Learned - Derek Heidenfelder
 
+For me, this project was very much the same as A10. However, it was a bit more unorthodox. I was not expecting to have to design the entire crossbar. The drawing of the motor bracket also taught me a lot like using section views in Solidworks and trying to manage lots of dimensions. The assembly was more of the same though I ended up having to use the measure tool a lot to determine actual distances. I used the measure tool in Solidworks over trying to mathematically figure it out because the dimensions were already very weird with the cross beam being in metric units and trying to convert that would have been a whole mess. Overall, my Soldworks and CAD skills with assemblies, screw holes, and drawings has continued to improve.
 
 
 ### CAD File Downloads
@@ -246,6 +249,9 @@ This is the final design for our tensile tester, fully modeled and assembled in 
 
 Machinery's Handbook 32nd Edition
 
+[Design, Manufacturing, and Testing of an Open-Source Universal Testing Machine for Hands-On Learning](https://repositum.tuwien.at/bitstream/20.500.12708/200949/1/Demmel%20Stella%20-%202024%20-%20Design%20manufacturing%20and%20testing%20of%20an%20open-source...pdf)
+
 [McMaster Website](https://www.mcmaster.com/)
 
 [Ruland Website](https://www.ruland.com/)
+
